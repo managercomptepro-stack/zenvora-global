@@ -1,0 +1,33 @@
+name: Copier les photos
+# Télécharge les photos libres de droits (Unsplash) listées dans photos.txt
+# vers assets/photos/, pour que le site les serve lui-même.
+on:
+  push:
+    paths: ["photos.txt"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  photos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Télécharger
+        run: |
+          mkdir -p assets/photos
+          n=0
+          while read -r id; do
+            [ -z "$id" ] && continue
+            f="assets/photos/$id.jpg"
+            [ -s "$f" ] && continue
+            curl -fsSL --retry 3 -o "$f" "https://images.unsplash.com/$id?auto=format&fm=jpg&fit=max&w=800&q=70" || { echo "échec $id"; rm -f "$f"; }
+            n=$((n+1))
+          done < photos.txt
+          echo "$n photos téléchargées"; ls assets/photos | wc -l
+      - name: Enregistrer
+        run: |
+          git config user.name "zenvora-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add assets/photos
+          git diff --cached --quiet || git commit -m "Photos du catalogue (Unsplash, licence libre)"
+          git push

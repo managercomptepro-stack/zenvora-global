@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0B1828">
+<title>Gestion — Zenvora Global</title>
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="../assets/img/logo-mark.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/admin.css?v=1">
+</head>
+<body>
+
+<!-- ================= CONNEXION ================= -->
+<section class="login" id="login" hidden>
+  <form class="login-card" id="loginForm">
+    <img src="../assets/img/logo-mark.svg" alt="" width="56" height="56">
+    <h1>Zenvora <span>Gestion</span></h1>
+    <p id="loginHint">Espace réservé à l'administrateur.</p>
+    <label class="f">
+      <span>Mot de passe</span>
+      <input type="password" id="loginPass" autocomplete="current-password" required>
+    </label>
+    <button class="b b-main" type="submit" id="loginBtn">Entrer</button>
+    <p class="err" id="loginErr" role="alert"></p>
+  </form>
+</section>
+
+<!-- ================= APPLICATION ================= -->
+<div class="app" id="app" hidden>
+  <header class="top">
+    <div class="top-brand"><img src="../assets/img/logo-mark.svg" alt="" width="32" height="32"><b>Gestion</b><span class="mode" id="modeTag"></span></div>
+    <div class="top-act">
+      <a class="b b-line b-sm" href="../index.html" target="_blank" rel="noopener">Voir le site</a>
+      <button class="b b-ghost b-sm" type="button" id="logout">Quitter</button>
+    </div>
+  </header>
+
+  <nav class="tabs" id="tabs" aria-label="Sections">
+    <button type="button" data-tab="produits" aria-current="page"><svg viewBox="0 0 24 24"><path d="M3.5 7.5 12 3l8.5 4.5v9L12 21l-8.5-4.5z M3.5 7.5 12 12l8.5-4.5M12 12v9"/></svg>Produits</button>
+    <button type="button" data-tab="rayons"><svg viewBox="0 0 24 24"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg>Rayons</button>
+    <button type="button" data-tab="reglages"><svg viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg>Réglages</button>
+    <button type="button" data-tab="demandes"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg>Demandes</button>
+  </nav>
+
+  <main class="main">
+    <!-- PRODUITS -->
+    <section class="tab" id="tab-produits">
+      <div class="bar">
+        <input type="search" id="pSearch" placeholder="Rechercher un produit…" autocomplete="off">
+        <select id="pCat"></select>
+      </div>
+      <div class="chips" id="pFilter">
+        <button type="button" data-f="all" aria-pressed="true">Tous <i id="nAll"></i></button>
+        <button type="button" data-f="featured" aria-pressed="false">★ Carrousel <i id="nFeat"></i></button>
+        <button type="button" data-f="top" aria-pressed="false">En tête <i id="nTop"></i></button>
+        <button type="button" data-f="hidden" aria-pressed="false">Masqués <i id="nHid"></i></button>
+      </div>
+      <p class="help" id="pHelp"></p>
+      <div class="plist" id="pList"></div>
+      <button class="fab" type="button" id="pNew" aria-label="Ajouter un produit"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><span>Ajouter</span></button>
+    </section>
+
+    <!-- RAYONS -->
+    <section class="tab" id="tab-rayons" hidden>
+      <h2>Rayons</h2>
+      <p class="help">Renommez, réordonnez ou ajoutez des rayons. Un rayon qui contient des produits ne peut pas être supprimé.</p>
+      <div class="clist" id="cList"></div>
+      <div class="row-add">
+        <input type="text" id="cNew" placeholder="Nouveau rayon (ex. Pièces auto)" maxlength="40">
+        <button class="b b-line" type="button" id="cAdd">Ajouter</button>
+      </div>
+      <button class="b b-main b-block" type="button" id="cSave">Enregistrer les rayons</button>
+    </section>
+
+    <!-- RÉGLAGES -->
+    <section class="tab" id="tab-reglages" hidden>
+      <h2>Réglages</h2>
+      <form class="card-f" id="sForm">
+        <label class="f">
+          <span>Montant minimum d'une commande ($)</span>
+          <input type="number" id="sMin" min="1" step="1" inputmode="numeric" required>
+          <small>La quantité minimum de chaque produit est calculée à partir de ce montant (ex. 500 $ → produit à 1 $ = 500 pièces).</small>
+        </label>
+        <label class="f">
+          <span>Taux : 1 $ = … FCFA</span>
+          <input type="number" id="sRate" min="1" step="1" inputmode="numeric" required>
+        </label>
+        <label class="f">
+          <span>Numéro WhatsApp des commandes</span>
+          <input type="tel" id="sWa" placeholder="+86 …" required>
+          <small>Format international, avec l'indicatif (ex. +86 138 0000 0000).</small>
+        </label>
+        <button class="b b-main b-block" type="submit">Enregistrer les réglages</button>
+      </form>
+      <div class="card-f danger">
+        <h3>Catalogue de démonstration</h3>
+        <p class="help" id="seedHelp"></p>
+        <button class="b b-line b-block" type="button" id="seedBtn"></button>
+      </div>
+    </section>
+
+    <!-- DEMANDES -->
+    <section class="tab" id="tab-demandes" hidden>
+      <h2>Demandes WhatsApp</h2>
+      <p class="help" id="dHelp">Chaque clic sur « Commander sur WhatsApp » est noté ici, même si le client n'envoie pas le message.</p>
+      <div class="dlist" id="dList"></div>
+    </section>
+  </main>
+</div>
+
+<!-- ================= FICHE D'ÉDITION ================= -->
+<div class="sheet" id="sheet" hidden>
+  <div class="sheet-bg" data-close></div>
+  <form class="sheet-panel" id="eForm" novalidate>
+    <div class="sheet-head">
+      <button class="b b-ghost b-sm" type="button" data-close>Annuler</button>
+      <b id="eTitle">Nouveau produit</b>
+      <button class="b b-main b-sm" type="submit" id="eSave">Enregistrer</button>
+    </div>
+    <div class="sheet-body">
+      <div class="f">
+        <span>Photos <i>(la première est la photo principale)</i></span>
+        <div class="photos" id="ePhotos"></div>
+        <div class="photo-add">
+          <label class="b b-line">
+            <input type="file" id="eFiles" accept="image/*" multiple hidden>
+            <svg viewBox="0 0 24 24"><path d="M4 7h3l2-2h6l2 2h3v12H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Ajouter des photos
+          </label>
+          <div class="url-add"><input type="url" id="eUrl" placeholder="…ou coller l'adresse d'une photo"><button class="b b-ghost b-sm" type="button" id="eUrlAdd">OK</button></div>
+        </div>
+        <p class="up" id="eUp" hidden></p>
+      </div>
+      <label class="f"><span>Nom du produit *</span><input type="text" id="eName" maxlength="90" required></label>
+      <div class="two">
+        <label class="f"><span>Rayon *</span><select id="eCat" required></select></label>
+        <label class="f"><span>Prix unitaire ($) *</span><input type="text" id="ePrice" inputmode="decimal" placeholder="ex. 1,80" required></label>
+      </div>
+      <p class="calc" id="eCalc"></p>
+      <label class="f"><span>Quantité minimum <i>(facultatif)</i></span><input type="number" id="eMoq" min="0" step="1" inputmode="numeric"><small id="eMoqHelp"></small></label>
+      <label class="f"><span>Accroche <i>(une ligne)</i></span><input type="text" id="eTag" maxlength="70" placeholder="ex. Coton, tailles S à XXL"></label>
+      <label class="f"><span>Description</span><textarea id="eDesc" rows="4" maxlength="600"></textarea></label>
+      <div class="sw-list">
+        <label class="sw"><input type="checkbox" id="eFeat"><span></span><div><b>Dans le carrousel</b><small>Le ruban qui défile en haut du site</small></div></label>
+        <label class="sw"><input type="checkbox" id="eTop"><span></span><div><b>En tête de la boutique</b><small>Affiché avant « Voir plus »</small></div></label>
+        <label class="sw"><input type="checkbox" id="eActive"><span></span><div><b>Visible sur le site</b><small>Décochez pour masquer sans supprimer</small></div></label>
+      </div>
+      <p class="err" id="eErr" role="alert"></p>
+      <button class="b b-danger b-block" type="button" id="eDel" hidden>Supprimer ce produit</button>
+    </div>
+  </form>
+</div>
+
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script src="../assets/js/config.js?v=1"></script>
+<script src="../assets/js/products.js?v=1"></script>
+<script src="../assets/js/store.js?v=1"></script>
+<script src="../assets/js/admin.js?v=1"></script>
+</body>
+</html>
