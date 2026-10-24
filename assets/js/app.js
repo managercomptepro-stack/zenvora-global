@@ -50,6 +50,18 @@
       + ' srcset="' + ws.map(function(w){ return esc(ZG.sized(src, w)) + ' ' + w + 'w'; }).join(', ') + '"'
       + ' sizes="' + esc(o.sizes || '(max-width:760px) 50vw, 20vw') + '" alt="' + esc(o.alt || '') + '"' + load + ' decoding="async">';
   }
+  /* Photo panoramique (ex. voiture de profil) dans un cadre vertical :
+     on la montre en entier sur un fond flouté d'elle-même, au lieu de la couper. */
+  document.addEventListener('load', function(e){
+    var t = e.target;
+    if (!t || t.tagName !== 'IMG' || t.classList.contains('alt')) return;
+    var box = t.closest('.fitbox');
+    if (!box || !t.naturalWidth || !box.clientHeight) return;
+    var wide = (t.naturalWidth / t.naturalHeight) / (box.clientWidth / box.clientHeight) > 1.45;
+    box.classList.toggle('is-wide', wide);
+    if (wide) box.style.setProperty('--bg', 'url("' + (t.currentSrc || t.src).replace(/"/g, '%22') + '")');
+  }, true);
+
   /* Une photo qui ne charge pas disparaît : le fond de marque reste */
   document.addEventListener('error', function(e){
     var t = e.target;
@@ -144,7 +156,7 @@
   function slideHtml(p, i, clone){
     return '<button type="button" class="car-slide"' + (clone ? ' tabindex="-1" aria-hidden="true"' : '')
       + ' data-open-product="' + esc(p.id) + '">'
-      + '<span class="car-img">' + pic(p.images[0], {alt: clone ? '' : p.name, eager: !clone && i < 3,
+      + '<span class="car-img fitbox">' + pic(p.images[0], {alt: clone ? '' : p.name, eager: !clone && i < 3,
           widths:[400, 640, 900], sizes:'(max-width:760px) 62vw, 280px'}) + '</span>'
       + '<span class="tag tag-moq">Min. ' + grp(minQ(p)) + ' pcs</span>'
       + '<span class="car-glass"><b>' + esc(p.name) + '</b>'
@@ -358,7 +370,7 @@
     var m = minQ(p);
     return '<article class="card' + (shelf ? ' in' : '') + '" style="--d:' + ((i % PAGE) % 5) * 60 + 'ms">'
       + '<button type="button" class="card-hit" data-open-product="' + esc(p.id) + '" aria-label="' + esc(p.name + ', ' + plain(usd(p.price))) + '">'
-      +   '<span class="card-media">'
+      +   '<span class="card-media fitbox">'
       +     pic(p.images[0], {alt:p.name, eager:i < 4, sizes:'(max-width:760px) 50vw, (max-width:1200px) 25vw, 20vw'})
       +     (p.images[1] ? pic(p.images[1], {cls:'alt', alt:'', sizes:'(max-width:760px) 50vw, 20vw'}) : '')
       +   '</span>'
@@ -438,11 +450,47 @@
     clearTimeout(searchTimer);
     searchTimer = setTimeout(function(){
       filter.q = searchEl.value; shown = PAGE; renderGrid();
-      var r = $('boutique').getBoundingClientRect();
-      if (filter.q.trim() && (r.top > window.innerHeight * .6 || r.bottom < 0)) scrollToShop();
     }, 220);
   });
-  searchEl.addEventListener('keydown', function(e){ if (e.key === 'Enter'){ e.preventDefault(); searchEl.blur(); scrollToShop(); } });
+  searchEl.addEventListener('keydown', function(e){
+    if (e.key === 'Enter'){ e.preventDefault(); hideSuggest(); searchEl.blur(); scrollToShop(); }
+    else if (e.key === 'Escape'){ hideSuggest(); }
+  });
+
+  /* Suggestions instantanées sous la barre de recherche */
+  var sugBox = $('suggest'), sugTimer;
+  function hideSuggest(){ sugBox.hidden = true; searchEl.setAttribute('aria-expanded', 'false'); }
+  function showSuggest(){
+    var q = norm(searchEl.value.trim());
+    if (q.length < 2){ hideSuggest(); return; }
+    var words = q.split(/\s+/);
+    function hit(txt){ var h = norm(txt); return words.every(function(w){ return h.indexOf(w) > -1; }); }
+    var cats = liveCats().filter(function(c){ return hit(c.label); }).slice(0, 4);
+    var prods = LIVE_P.filter(function(p){ return hit(p.name + ' ' + p.tagline + ' ' + p.num + ' ' + (CAT_LABEL[p.category] || '')); });
+    var total = prods.length;
+    prods = prods.slice(0, 6);
+    var html = '';
+    if (cats.length) html += '<p class="sg-h">Rayons</p><div class="sg-cats">' + cats.map(function(c){
+      return '<button type="button" class="sg-cat" data-cat="' + esc(c.key) + '">' + esc(c.label) + ' <small>' + catItems(c.key).length + '</small></button>';
+    }).join('') + '</div>';
+    if (prods.length) html += '<p class="sg-h">Produits</p>' + prods.map(function(p){
+      return '<button type="button" class="sg" role="option" data-open-product="' + esc(p.id) + '">'
+        + '<span class="sg-img">' + pic(p.images[0], {widths:[120], sizes:'44px'}) + '</span>'
+        + '<span class="sg-t"><b>' + esc(p.name) + '</b><small>' + esc(CAT_LABEL[p.category] || '') + ' · min. ' + grp(minQ(p)) + ' pcs</small></span>'
+        + '<span class="sg-p">' + usd(p.price) + '</span></button>';
+    }).join('');
+    if (total > prods.length) html += '<button type="button" class="sg-all" id="sgAll">Voir les ' + total + ' résultats</button>';
+    if (!html) html = '<p class="sg-empty">Aucun produit pour « ' + esc(searchEl.value.trim()) + ' ». Demandez-le-nous sur WhatsApp : nous le trouvons en Chine.</p>';
+    sugBox.innerHTML = html;
+    sugBox.hidden = false;
+    searchEl.setAttribute('aria-expanded', 'true');
+  }
+  searchEl.addEventListener('input', function(){ clearTimeout(sugTimer); sugTimer = setTimeout(showSuggest, 100); });
+  searchEl.addEventListener('focus', function(){ if (searchEl.value.trim().length >= 2) showSuggest(); });
+  document.addEventListener('click', function(e){
+    if (e.target.closest('#sgAll')){ hideSuggest(); scrollToShop(); return; }
+    if (!e.target.closest('.search-wrap') || e.target.closest('.sg, .sg-cat')) hideSuggest();
+  }, true);
   $('sort').addEventListener('change', function(e){ filter.sort = e.target.value; shown = PAGE; renderGrid(); });
 
   document.addEventListener('click', function(e){
@@ -458,6 +506,7 @@
       renderGrid();
     } else if ((t = e.target.closest('[data-cat]')) && !t.classList.contains('chip')){
       e.preventDefault();
+      if (!$('menu').hidden) closeLayer('menu');
       filter.cat = t.getAttribute('data-cat');
       filter.q = ''; searchEl.value = '';
       shown = PAGE;
@@ -482,7 +531,10 @@
     syncHeader();
     var p = pageSize();
     if (p !== PAGE){ PAGE = p; }
+    var mob = window.innerWidth < 760;
+    if (mob !== wasMobile){ wasMobile = mob; if (LIVE_P.length) renderRayons(); }
   }, {passive:true});
+  var wasMobile = window.innerWidth < 760;
   var stuck = false;
   window.addEventListener('scroll', function(){
     var s = window.scrollY > 8;

@@ -248,7 +248,7 @@ const PRODUCTS = (function(){
   P("hommes", "Vestes de costume colorées", 19, ["photo-1549037173-e3b717902c57"], "Assortiment", "Vestes seules en plusieurs couleurs.");
   P("hommes", "Jean denim homme", 6.5, ["photo-1542272604-787c3835535d", "photo-1602293589930-45aad59ba3ab"], "Coupe droite", "Jean résistant, 28 à 40.");
   P("hommes", "Lot de jeans", 4.8, ["photo-1565084888279-aca607ecce0c", "photo-1637069585336-827b298fe84a"], "Tailles mélangées", "Jeans au lot, meilleur prix.");
-  P("hommes", "Chemise à carreaux", 4, ["photo-1564468781192-f023d514222d"], "Flanelle légère", "Chemise décontractée.");
+  P("hommes", "Chemise à carreaux", 4, ["photo-1642764873649-5c228ce3fe74"], "Flanelle légère", "Chemise décontractée.");
 
   /* ================= ENFANT & BÉBÉ ================= */
   P("enfants", "Vêtements bébé assortis", 2.4, ["photo-1766918780914-5df4a5a98c44", "photo-1766918780914-e19d9de76d85"], "Layette variée", "Pyjamas, bodies et ensembles, 0 à 2 ans.");

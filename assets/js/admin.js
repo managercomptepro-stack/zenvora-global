@@ -15,7 +15,7 @@
   function grp(n){ return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' '); }
   function num(v){ var n = parseFloat(String(v).replace(/\s/g, '').replace(',', '.')); return isFinite(n) ? n : 0; }
   function catLabel(k){ var c = DB.categories.filter(function(x){ return x.key === k; })[0]; return c ? c.label : k; }
-  function thumb(src){ return src ? ZG.sized(src, 160) : ''; }
+  function thumb(src){ return src ? (ZG.local(src) || ZG.sized(src, 160)) : ''; }
 
   var toastT;
   function toast(msg, bad){

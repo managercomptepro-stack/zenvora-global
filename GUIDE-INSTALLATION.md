@@ -9,15 +9,19 @@ Tout est gratuit. Il faut environ 20 minutes, une seule fois.
 | `index.html` | Le site pour les clients |
 | `gestion/` | L'espace de gestion, protégé par mot de passe : **votre-site/gestion/** |
 | `assets/js/config.js` | Le **seul** fichier à modifier : l'adresse Google Sheets |
-| `assets/js/products.js` | Le catalogue de démonstration (145 produits) |
+| `assets/js/products.js` | Le catalogue de démonstration (225 produits, 28 rayons) |
 | `google-apps-script/Code.gs` | Le script à coller dans Google Sheets |
 
-## Étape 1 : mettre le site en ligne (Netlify, gratuit)
+## Étape 1 : le site en ligne (GitHub Pages, gratuit)
 
-1. Allez sur **app.netlify.com/drop** depuis un ordinateur et créez un compte gratuit.
-2. Glissez le dossier `zenvora` dans la page. Le site est en ligne en quelques secondes.
-3. Dans *Site configuration › Change site name*, choisissez par exemple `zenvora-global`.
-   L'adresse devient **zenvora-global.netlify.app**.
+Le site est dans le dépôt **github.com/managercomptepro-stack/zenvora-global**.
+1. Ouvrez *Settings › Pages*.
+2. Dans *Source*, choisissez **Deploy from a branch**, puis **main** et **/ (root)**, et cliquez sur **Save**.
+3. Quelques minutes plus tard, le site est en ligne sur **managercomptepro-stack.github.io/zenvora-global**.
+
+Chaque modification envoyée sur la branche `main` met le site à jour automatiquement.
+Les photos de démonstration sont dans `assets/photos/` : le robot *Copier les photos*
+(onglet *Actions*) télécharge toute nouvelle photo ajoutée à `photos.txt`.
 
 Le site fonctionne déjà en **mode démo** : vous avez le catalogue de démonstration, et l'espace de gestion
 enregistre vos modifications uniquement sur l'appareil utilisé (mot de passe : `demo`).
@@ -37,12 +41,12 @@ enregistre vos modifications uniquement sur l'appareil utilisé (mot de passe : 
 6. Copiez l'**URL de l'application Web**. Elle se termine par `/exec`.
 7. Ouvrez `assets/js/config.js` et collez l'adresse ici :
    `const CATALOGUE_ENDPOINT = "https://script.google.com/macros/s/……/exec";`
-8. Sur Netlify, glissez à nouveau le dossier (*Deploys › Drag and drop*).
+8. Envoyez la modification sur GitHub (ou modifiez `config.js` directement sur github.com, bouton crayon).
 
 ## Étape 3 : premier lancement
 
 1. Sur votre téléphone, ouvrez **votre-site/gestion/** et entrez votre mot de passe.
-2. Allez dans **Réglages › Importer le catalogue de démonstration** pour remplir la feuille avec les 145 produits.
+2. Allez dans **Réglages › Importer le catalogue de démonstration** pour remplir la feuille avec les 225 produits.
 3. Toujours dans **Réglages**, vérifiez trois choses :
    - le minimum de commande (500 $) ;
    - le taux (1 $ = 600 FCFA) ;
