@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T13:09:57.133Z",
+ "updated": "2026-10-25T14:13:25.820Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,27 @@
   }
  ],
  "products": [
+  {
+   "id": "ensemble-enfant-t-shirt-short-cotton-mvnwranv",
+   "num": "ZG-0226",
+   "name": "Ensemble enfant T-shirt + short 💯 cotton",
+   "category": "enfants",
+   "price": 2.5,
+   "moq": 0,
+   "tagline": "Ensemble jogging cotton enfant Turquie 1 à 5 ans",
+   "description": "Ensemble Enfant T-shirt + Short 👕\n\nEnsemble tendance et confortable, avec imprimé moderne, idéal pour les sorties et le quotidien.\n\n* Âge : 2 à 7 ans\n\n* Contenu : T-shirt + short\n\n* Coloris : Plusieurs couleurs disponibles",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161650-mvnwj5om.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161651-mvnwj894.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161652-mvnwja79.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161647-mvnwjc4j.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161648-mvnwje4l.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161649-mvnwjfuz.jpg"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
   {
    "id": "moto-routiere-150-cc-1",
    "num": "ZG-0001",
