@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T14:21:31.250Z",
+ "updated": "2026-10-25T14:21:33.611Z",
  "categories": [
   {
    "key": "motos",
@@ -163,7 +163,7 @@
     "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161667-mvnwu08m.jpg",
     "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161668-mvnwu22t.jpg"
    ],
-   "featured": false,
+   "featured": true,
    "top": 0,
    "active": true
   },
