@@ -4,12 +4,14 @@ import fs from 'node:fs';
 
 const cfg = fs.readFileSync('assets/js/config.js', 'utf8');
 const m = /CATALOGUE_ENDPOINT\s*=\s*"([^"]*)"/.exec(cfg);
-if (!m || !/^https:\/\/script\.google/.test(m[1])) { console.log('Google Sheets non branché : rien à faire'); process.exit(0); }
+if (!m || !/^https:\/\/script\.google/.test(m[1])) { console.log('::notice::Google Sheets non branché : rien à faire'); process.exit(0); }
 
-const res = await fetch(m[1] + '?action=catalogue&t=' + Date.now(), { redirect: 'follow' });
+let res;
+try { res = await fetch(m[1] + '?action=catalogue&t=' + Date.now(), { redirect: 'follow' }); }
+catch (e) { console.log('::warning::Google injoignable : ' + e.message); process.exit(0); }
 const json = await res.json().catch(() => null);
 if (!json || json.ok !== true || !json.data || !(json.data.products || []).length) {
-  console.log('Réponse inattendue, catalogue.json inchangé', res.status);
+  console.log('::warning::Réponse inattendue de Google (HTTP ' + res.status + '), catalogue.json inchangé');
   process.exit(0);
 }
 const data = json.data;
@@ -36,4 +38,4 @@ for (const p of data.products) {
 const text = JSON.stringify(data, null, 1) + '\n';
 const before = fs.existsSync('catalogue.json') ? fs.readFileSync('catalogue.json', 'utf8') : '';
 if (before !== text) fs.writeFileSync('catalogue.json', text);
-console.log(`${data.products.length} produits, ${fetched} nouvelles photos, ${before === text ? 'aucun changement' : 'catalogue.json mis à jour'}`);
+console.log(`::notice::${data.products.length} produits, ${fetched} nouvelles photos, ${before === text ? 'aucun changement' : 'catalogue.json mis à jour'}`);
