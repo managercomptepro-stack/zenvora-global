@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T21:13:57.204Z",
+ "updated": "2026-10-25T21:19:47.305Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,28 @@
   }
  ],
  "products": [
+  {
+   "id": "canape-compresse-mvobzlgp",
+   "num": "ZG-0238",
+   "name": "CANAPÉ COMPRESSÉ",
+   "category": "meubles",
+   "price": 57.54,
+   "moq": 0,
+   "tagline": "",
+   "description": "Canapé compressé paresseux  carré et circulaire minimaliste moderne , luxe de très bonnes qualités",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165654-mvobt71e.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165643-mvobt9ft.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165655-mvobtb6p.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165642-mvobtd5u.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165647-mvobtexf.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165638-mvobtgxe.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165650-mvobtj1f.jpg"
+   ],
+   "featured": true,
+   "top": 24,
+   "active": true
+  },
   {
    "id": "canape-compresse-mvobs3bn",
    "num": "ZG-0237",
