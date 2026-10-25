@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T14:54:15.145Z",
+ "updated": "2026-10-25T14:54:23.527Z",
  "categories": [
   {
    "key": "motos",
@@ -326,7 +326,7 @@
    "images": [
     "https://images.unsplash.com/photo-1758256554954-c19e82f54faa"
    ],
-   "featured": false,
+   "featured": true,
    "top": 14,
    "active": true
   },
