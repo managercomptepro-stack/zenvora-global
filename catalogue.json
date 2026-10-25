@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T15:11:21.027Z",
+ "updated": "2026-10-25T15:28:06.992Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,29 @@
   }
  ],
  "products": [
+  {
+   "id": "robe-courte-pour-enfants-tres-jolie-mvnzfccw",
+   "num": "ZG-0233",
+   "name": "Robe courte pour enfants très jolie",
+   "category": "enfants",
+   "price": 1.6,
+   "moq": 0,
+   "tagline": "Âge 1...6 ans",
+   "description": "Jolie Robe enfants âge 1... 6 ans\nTrès bonne matière \nCommandez maintenant",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001162276-mvnygpqi.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001162275-mvnygs5z.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001162277-mvnygu6d.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001162270-mvnygvu9.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001162272-mvnygxpa.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001162271-mvnygzpv.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001162274-mvnyh1dv.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001162273-mvnyh3i8.jpg"
+   ],
+   "featured": true,
+   "top": 15,
+   "active": true
+  },
   {
    "id": "jolie-robe-enfants-made-in-turquie-mvnyfd0g",
    "num": "ZG-0232",
