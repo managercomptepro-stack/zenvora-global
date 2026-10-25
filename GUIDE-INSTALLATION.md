@@ -1,79 +1,25 @@
-# Zenvora Global : mise en ligne
+# Zenvora Global — fonctionnement
 
-Tout est gratuit. Il faut environ 20 minutes, une seule fois.
+**Site :** https://taupe-kitten-00ee29.netlify.app
+**Gestion :** https://taupe-kitten-00ee29.netlify.app/gestion/
 
-## Ce que contient le dossier
+## Comment ça marche
+- Le catalogue est le fichier `catalogue.json` de ce dépôt GitHub. Le site le lit directement
+  (raw.githubusercontent.com, puis jsDelivr en secours) : aucun serveur, aucune dépendance à Google.
+- Les photos de démonstration sont dans `assets/photos/` (servies par jsDelivr).
+  Les photos ajoutées depuis la gestion vont dans `assets/uploads/`.
+- La gestion enregistre chaque modification dans le dépôt : visible sur le site public sous ~5 minutes,
+  immédiatement sur l'appareil de l'administrateur. Rien à redéployer.
+- Les commandes partent sur WhatsApp (numéro modifiable dans Gestion › Réglages).
+- Google Sheets ne sert plus qu'en option à noter les demandes (onglet Demandes) quand Google est joignable.
 
-| Fichier | Rôle |
-|---|---|
-| `index.html` | Le site pour les clients |
-| `gestion/` | L'espace de gestion, protégé par mot de passe : **votre-site/gestion/** |
-| `assets/js/config.js` | Le **seul** fichier à modifier : l'adresse Google Sheets |
-| `assets/js/products.js` | Le catalogue de démonstration (225 produits, 28 rayons) |
-| `google-apps-script/Code.gs` | Le script à coller dans Google Sheets |
+## Première connexion à la gestion (une seule fois par appareil)
+1. Ouvrez https://github.com/settings/tokens/new?scopes=public_repo&description=Zenvora%20gestion
+   (connecté au compte managercomptepro-stack).
+2. Expiration : « No expiration » (ou 1 an), case **public_repo** cochée, puis **Generate token**.
+3. Copiez la clé (ghp_…) et collez-la dans la gestion. Cochez « Se souvenir sur cet appareil ».
+   Ne la partagez avec personne : elle permet de modifier le site.
 
-## Étape 1 : le site en ligne (GitHub Pages, gratuit)
-
-Le site est dans le dépôt **github.com/managercomptepro-stack/zenvora-global**.
-1. Ouvrez *Settings › Pages*.
-2. Dans *Source*, choisissez **Deploy from a branch**, puis **main** et **/ (root)**, et cliquez sur **Save**.
-3. Quelques minutes plus tard, le site est en ligne sur **managercomptepro-stack.github.io/zenvora-global**.
-
-Chaque modification envoyée sur la branche `main` met le site à jour automatiquement.
-Les photos de démonstration sont dans `assets/photos/` : le robot *Copier les photos*
-(onglet *Actions*) télécharge toute nouvelle photo ajoutée à `photos.txt`.
-
-Le site fonctionne déjà en **mode démo** : vous avez le catalogue de démonstration, et l'espace de gestion
-enregistre vos modifications uniquement sur l'appareil utilisé (mot de passe : `demo`).
-
-## Étape 2 : brancher Google Sheets (la base de données)
-
-1. Sur **sheets.google.com**, créez une feuille vide nommée « Zenvora — catalogue ».
-2. Ouvrez **Extensions › Apps Script**. Effacez le contenu, puis collez tout le fichier `google-apps-script/Code.gs`.
-3. **Ligne 12** : remplacez `ChangezMoi-2026` par votre mot de passe. Choisissez un mot de passe long, que vous n'utilisez nulle part ailleurs.
-4. Enregistrez (icône disquette). Choisissez la fonction **installer** dans la liste, puis cliquez sur **▶ Exécuter**.
-   Autorisez l'accès quand Google le demande : *Paramètres avancés › Accéder au projet*.
-   Les onglets Produits, Rayons, Reglages et Demandes apparaissent dans la feuille, et un dossier
-   « Zenvora Global — photos produits » est créé dans votre Google Drive.
-5. Cliquez sur **Déployer › Nouveau déploiement › type : Application Web**, avec ces réglages :
-   - Exécuter en tant que : **Moi**
-   - Qui a accès : **Tout le monde**
-6. Copiez l'**URL de l'application Web**. Elle se termine par `/exec`.
-7. Ouvrez `assets/js/config.js` et collez l'adresse ici :
-   `const CATALOGUE_ENDPOINT = "https://script.google.com/macros/s/……/exec";`
-8. Envoyez la modification sur GitHub (ou modifiez `config.js` directement sur github.com, bouton crayon).
-
-## Étape 3 : premier lancement
-
-1. Sur votre téléphone, ouvrez **votre-site/gestion/** et entrez votre mot de passe.
-2. Allez dans **Réglages › Importer le catalogue de démonstration** pour remplir la feuille avec les 225 produits.
-3. Toujours dans **Réglages**, vérifiez trois choses :
-   - le minimum de commande (500 $) ;
-   - le taux (1 $ = 600 FCFA) ;
-   - le **numéro WhatsApp**. Mettez ici votre numéro chinois quand vous l'aurez.
-4. Pour mettre la gestion sur l'écran d'accueil du téléphone :
-   - iPhone : *Partager › Sur l'écran d'accueil* ;
-   - Android : menu ⋮ › *Ajouter à l'écran d'accueil*.
-
-## Au quotidien (depuis le téléphone)
-
-- **Ajouter un produit** : bouton orange **+ Ajouter**. Ajoutez des photos (appareil photo ou galerie), le nom, le rayon, le prix en $, puis **Enregistrer**.
-  Les photos sont réduites automatiquement et rangées dans votre Google Drive.
-- **★** : le produit défile dans le carrousel du haut de page.
-- **↑** : le produit s'affiche en tête de la boutique, avant « Voir plus ». L'onglet *En tête* permet de changer l'ordre avec les flèches.
-- **Œil** : masque un produit sans le supprimer.
-- **Quantité minimum** : laissez le champ vide pour un calcul automatique (minimum 500 $ de commande).
-  Exemples : produit à 1 $ → 500 pièces ; produit à 100 $ → 5 pièces ; produit à 101 $ → 5 pièces (505 $) ; produit à 600 $ → 1 pièce.
-  Remplissez le champ seulement pour imposer un autre minimum à un produit précis.
-- **Demandes** : chaque clic d'un client sur « Commander sur WhatsApp » est noté ici, et dans l'onglet *Demandes* de la feuille.
-
-Après une modification, le site public se met à jour en 5 minutes maximum (cache Google).
-
-## Bon à savoir
-
-- Les **prix du catalogue de démonstration sont indicatifs** : remplacez-les par vos prix fournisseurs.
-- Les photos de démonstration viennent d'**Unsplash** (licence libre, usage commercial autorisé).
-  Remplacez-les petit à petit par les photos de vos fournisseurs.
-- Le mot de passe n'est vérifié que par Google : quelqu'un qui trouve l'adresse `/gestion/` ne peut rien faire sans lui.
-- Si vous modifiez `Code.gs` plus tard : **Déployer › Gérer les déploiements › Modifier › Nouvelle version**.
-  L'adresse `/exec` ne change pas.
+## Modifier le code du site
+Le code est déployé sur Netlify (taupe-kitten-00ee29) par glisser-déposer de `deploy/netlify.zip`
+dans Netlify › Deploys. Ce n'est nécessaire que si le code change, pas pour les produits.
