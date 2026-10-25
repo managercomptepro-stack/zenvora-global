@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T14:41:24.349Z",
+ "updated": "2026-10-25T14:45:58.096Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,27 @@
   }
  ],
  "products": [
+  {
+   "id": "pulls-enfants-pour-noel-mvnxx51r",
+   "num": "ZG-0231",
+   "name": "Pulls enfants pour Noël",
+   "category": "enfants",
+   "price": 4.8,
+   "moq": 0,
+   "tagline": "Taille 1 ans à 12 ans",
+   "description": "Les fêtes sont proches nos pulls pour enfants disponible mixte toutes les tailles disponibles 1 à 12 ans disponible. \nCommandez maintenant",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161960-mvnxrysd.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161956-mvnxs10i.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161934-mvnxs2tl.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161957-mvnxs4xk.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161958-mvnxs6bi.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161959-mvnxs80g.jpg"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
   {
    "id": "ensemble-enfants-filles-tres-bon-matiere-mvnxr9tb",
    "num": "ZG-0230",
