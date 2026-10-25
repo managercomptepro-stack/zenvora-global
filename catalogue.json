@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T15:00:14.980Z",
+ "updated": "2026-10-25T15:09:11.678Z",
  "categories": [
   {
    "key": "motos",
@@ -328,14 +328,14 @@
    "num": "ZG-0002",
    "name": "Tricycle cargo motorisé",
    "category": "motos",
-   "price": 1350,
+   "price": 700,
    "moq": 0,
    "tagline": "Benne arrière, 200 cc",
    "description": "Tricycle de transport de marchandises, très demandé par les commerçants et livreurs.",
    "images": [
     "https://images.unsplash.com/photo-1791137612019-db68a897c837"
    ],
-   "featured": true,
+   "featured": false,
    "top": 4,
    "active": true
   },
