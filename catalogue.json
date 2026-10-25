@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T12:51:19.715Z",
+ "updated": "2026-10-25T12:51:24.465Z",
  "categories": [
   {
    "key": "motos",
@@ -143,20 +143,6 @@
   }
  ],
  "products": [
-  {
-   "id": "test-supprimer-mvnttpnn",
-   "num": "ZG-0226",
-   "name": "TEST SUPPRIMER",
-   "category": "telephones",
-   "price": 2,
-   "moq": 250,
-   "tagline": "",
-   "description": "",
-   "images": [],
-   "featured": false,
-   "top": 0,
-   "active": false
-  },
   {
    "id": "moto-routiere-150-cc-1",
    "num": "ZG-0001",
