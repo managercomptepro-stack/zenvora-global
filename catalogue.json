@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T15:28:06.992Z",
+ "updated": "2026-10-25T15:33:08.082Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,29 @@
   }
  ],
  "products": [
+  {
+   "id": "bottes-mschf-2x4-brutal-mvnzlsoh",
+   "num": "ZG-0234",
+   "name": "Bottes MSCHF 2x4 Brutal",
+   "category": "chaussures",
+   "price": 12.7,
+   "moq": 0,
+   "tagline": "P 40-45",
+   "description": "• Modèle : MSCHF 2x4 Brutal Boot .\n• Design : Conception volumineuse et déconstruite rappelant l'esthétique industrielle et les modèles Timberland réinterprétés avec une semelle surdimensionnée à blocs.",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001162421-mvnzfxak.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001162410-mvnzfzdk.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001162411-mvnzg17i.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001162416-mvnzg33e.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001162405-mvnzg4w8.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001162415-mvnzg6lm.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001162406-mvnzg8cx.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001162409-mvnzgaaq.jpg"
+   ],
+   "featured": true,
+   "top": 16,
+   "active": true
+  },
   {
    "id": "robe-courte-pour-enfants-tres-jolie-mvnzfccw",
    "num": "ZG-0233",
