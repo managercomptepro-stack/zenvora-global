@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T21:01:53.935Z",
+ "updated": "2026-10-25T21:08:12.245Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,31 @@
   }
  ],
  "products": [
+  {
+   "id": "canape-compresse-mvobkp5g",
+   "num": "ZG-0236",
+   "name": "CANAPÉ COMPRESSÉ",
+   "category": "meubles",
+   "price": 40.2,
+   "moq": 0,
+   "tagline": "",
+   "description": "Canapé -lit pliable pour Salon , fauteuil convertible , canapé portable compressé sous vide",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165522-mvobgh1w.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165586-mvobgjml.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165587-mvobgljp.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165521-mvobgncr.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165516-mvobgpb7.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165591-mvobgr1r.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165592-mvobgsu4.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165517-mvobguub.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165585-mvobgwwa.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165593-mvobgyqp.jpg"
+   ],
+   "featured": true,
+   "top": 22,
+   "active": true
+  },
   {
    "id": "canape-compresse-mvobcl8t",
    "num": "ZG-0235",
