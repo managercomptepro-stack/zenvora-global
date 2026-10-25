@@ -7,13 +7,18 @@
    ============================================================================ */
 
 /* ---------------------------------------------------------------------------
-   1. GOOGLE SHEETS — base de données du catalogue
-   Collez ici l'adresse de déploiement de votre Google Apps Script
-   (elle se termine par /exec). Voir GUIDE-INSTALLATION.md, étape 2.
-   Tant que ce champ est vide, le site tourne en « mode démo » :
-   catalogue de démonstration + espace de gestion enregistré sur l'appareil.
+   1. GOOGLE SHEETS (facultatif) — garde une trace des demandes WhatsApp
+   dans l'onglet « Demandes ». S'il est injoignable, rien n'est bloqué.
    --------------------------------------------------------------------------- */
 const CATALOGUE_ENDPOINT = "https://script.google.com/macros/s/AKfycbyk9fiOxByaUrHNS3uz9eSqwHEKnyDsX3n0diFr5uc_M7Mz-Cy2ZaXC936DJ6VpS4gF/exec";
+
+/* ---------------------------------------------------------------------------
+   DÉPÔT GITHUB QUI CONTIENT LE CATALOGUE (catalogue.json + photos)
+   Le site le lit directement : il s'ouvre partout, sans serveur.
+   L'espace de gestion y enregistre les modifications (clé d'accès GitHub).
+   --------------------------------------------------------------------------- */
+const GITHUB_REPO = "managercomptepro-stack/zenvora-global";
+const GITHUB_BRANCH = "main";
 
 /* Photos du catalogue de démonstration copiées dans assets/photos/
    (true = le site les sert lui-même, sans dépendre d'Unsplash) */

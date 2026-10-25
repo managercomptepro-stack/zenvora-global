@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/admin.css?v=3">
+<link rel="stylesheet" href="../assets/css/admin.css?v=4">
 </head>
 <body>
 
@@ -24,9 +24,10 @@
     <h1>Zenvora <span>Gestion</span></h1>
     <p id="loginHint">Espace réservé à l'administrateur.</p>
     <label class="f">
-      <span>Mot de passe</span>
+      <span id="loginLbl">Mot de passe</span>
       <input type="password" id="loginPass" autocomplete="current-password" required>
     </label>
+    <label class="keep" id="keepWrap" hidden><input type="checkbox" id="loginKeep" checked> Se souvenir sur cet appareil</label>
     <button class="b b-main" type="submit" id="loginBtn">Entrer</button>
     <p class="err" id="loginErr" role="alert"></p>
   </form>
@@ -63,7 +64,7 @@
         <button type="button" data-f="hidden" aria-pressed="false">Masqués <i id="nHid"></i></button>
       </div>
       <p class="help" id="pHelp"></p>
-      <p class="note-sync" id="syncNote" hidden>Vos modifications apparaissent sur le site public sous 10 à 15 minutes (synchronisation automatique).</p>
+      <p class="note-sync" id="syncNote" hidden>Chaque modification est enregistrée en ligne et visible sur le site public sous 5 minutes environ (immédiatement sur cet appareil).</p>
       <div class="plist" id="pList"></div>
       <button class="fab" type="button" id="pNew" aria-label="Ajouter un produit"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><span>Ajouter</span></button>
     </section>
@@ -110,7 +111,7 @@
     <!-- DEMANDES -->
     <section class="tab" id="tab-demandes" hidden>
       <h2>Demandes WhatsApp</h2>
-      <p class="help" id="dHelp">Chaque clic sur « Commander sur WhatsApp » est noté ici, même si le client n'envoie pas le message.</p>
+      <p class="help" id="dHelp">Les commandes arrivent directement sur votre WhatsApp : chaque message contient le produit, la référence, la quantité, le total, le pays et la ville. Elles sont aussi notées dans l’onglet « Demandes » de votre Google Sheet quand Google est joignable.</p>
       <div class="dlist" id="dList"></div>
     </section>
   </main>
@@ -160,9 +161,9 @@
 
 <div class="toast" id="toast" role="status" hidden></div>
 
-<script src="../assets/js/config.js?v=2"></script>
-<script src="../assets/js/products.js?v=2"></script>
-<script src="../assets/js/store.js?v=3"></script>
-<script src="../assets/js/admin.js?v=3"></script>
+<script src="../assets/js/config.js?v=4"></script>
+<script src="../assets/js/products.js?v=4"></script>
+<script src="../assets/js/store.js?v=4"></script>
+<script src="../assets/js/admin.js?v=4"></script>
 </body>
 </html>

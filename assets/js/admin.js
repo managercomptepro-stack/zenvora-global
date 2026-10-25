@@ -30,9 +30,16 @@
   }
 
   /* ---------------- Connexion ---------------- */
-  $('modeTag').textContent = A.live ? 'Google Sheets' : 'Mode démo';
+  $('modeTag').textContent = A.live ? 'En ligne' : 'Mode démo';
   $('modeTag').classList.toggle('demo', !A.live);
-  $('loginHint').innerHTML = A.live ? 'Espace réservé à l’administrateur.'
+  if (A.live){
+    $('loginLbl').textContent = 'Clé d’accès';
+    $('loginPass').placeholder = 'github_pat_… ou ghp_…';
+    $('loginPass').autocomplete = 'off';
+    $('keepWrap').hidden = false;
+  }
+  $('loginHint').innerHTML = A.live ? 'Collez votre clé d’accès GitHub. Elle n’est demandée qu’une fois sur cet appareil. '
+      + '<a href="https://github.com/settings/tokens/new?scopes=public_repo&description=Zenvora%20gestion" target="_blank" rel="noopener">Créer une clé</a>'
     : '<b>Mode démo</b> (Google Sheets pas encore branché) : mot de passe <b>demo</b>. Les modifications restent sur cet appareil.';
   function showLogin(){ $('login').hidden = false; $('app').hidden = true; setTimeout(function(){ $('loginPass').focus(); }, 50); }
   function showApp(){ $('login').hidden = true; $('app').hidden = false; }
@@ -42,7 +49,7 @@
     var btn = $('loginBtn');
     $('loginErr').textContent = '';
     busy(btn, true, 'Vérification…');
-    A.login($('loginPass').value).then(function(){ $('loginPass').value = ''; boot(); })
+    A.login($('loginPass').value, $('loginKeep').checked).then(function(){ $('loginPass').value = ''; boot(); })
       ['catch'](function(err){ $('loginErr').textContent = err.message || 'Mot de passe incorrect.'; })
       .then(function(){ busy(btn, false); });
   });
@@ -53,7 +60,7 @@
     $('syncNote').hidden = !A.live;
     $('pList').innerHTML = '<p class="help">Chargement du catalogue…</p>';
     A.load().then(function(db){ DB = db; renderAll(); })['catch'](function(err){
-      if (/mot de passe|password|autoris/i.test(err.message)){ A.logout(); showLogin(); $('loginErr').textContent = err.message; return; }
+      if (/mot de passe|password|autoris|clé|droit/i.test(err.message)){ A.logout(); showLogin(); $('loginErr').textContent = err.message; return; }
       $('pList').innerHTML = '<p class="err">Impossible de charger : ' + esc(err.message) + '</p>';
     });
   }
@@ -338,8 +345,8 @@
     $('sRate').value = s.usdToXof;
     $('sWa').value = s.whatsappNumber;
     if (A.live){
-      $('seedHelp').textContent = 'Ajoute dans Google Sheets les ' + ZG.seedDb().products.length + ' produits de démonstration (uniquement si la feuille Produits est vide).';
-      $('seedBtn').textContent = 'Importer le catalogue de démonstration';
+      $('seedHelp').textContent = 'Attention : remplace tout le catalogue en ligne par les ' + ZG.seedDb().products.length + ' produits de démonstration (les réglages sont gardés).';
+      $('seedBtn').textContent = 'Remettre le catalogue de démonstration';
     } else {
       $('seedHelp').textContent = 'Mode démo : vos modifications sont gardées sur cet appareil. Ce bouton remet le catalogue de départ.';
       $('seedBtn').textContent = 'Réinitialiser la démo';
@@ -357,7 +364,7 @@
       .then(function(){ busy(btn, false); });
   });
   $('seedBtn').addEventListener('click', function(){
-    var msg = A.live ? 'Importer le catalogue de démonstration dans Google Sheets ?' : 'Effacer vos modifications de démo et revenir au catalogue de départ ?';
+    var msg = A.live ? 'Remplacer TOUT le catalogue en ligne par le catalogue de démonstration ?' : 'Effacer vos modifications de démo et revenir au catalogue de départ ?';
     if (!window.confirm(msg)) return;
     var btn = $('seedBtn');
     busy(btn, true, 'Import…');
@@ -370,7 +377,7 @@
      DEMANDES
      ============================================================ */
   function loadDemandes(){
-    if (!A.live){ $('dList').innerHTML = '<p class="empty">Disponible une fois Google Sheets branché.</p>'; return; }
+    $('dList').innerHTML = ''; return;
     $('dList').innerHTML = '<p class="help">Chargement…</p>';
     A.demandes().then(function(rows){
       if (!rows || !rows.length){ $('dList').innerHTML = '<p class="empty">Aucune demande pour l’instant.</p>'; return; }

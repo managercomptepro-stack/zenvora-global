@@ -899,7 +899,7 @@
   /* ============================================================
      DÉMARRAGE : affichage immédiat (cache ou démo), puis catalogue frais
      ============================================================ */
-  /* Ordre de confiance : Google Sheets en direct (3) > catalogue publié (2) > mémoire de l'appareil (1) > démo (0).
+  /* Ordre de confiance : catalogue en ligne (2) > mémoire de l'appareil (1) > démo (0).
      On affiche tout de suite ce qu'on a, puis on remplace par mieux sans jamais bloquer. */
   var rank = -1;
   function show(db, r){
@@ -911,16 +911,9 @@
     if (wasOpen) {}
   }
   var cachedDb = ZG.cached();
-  if (cachedDb && cachedDb.products.length) show(cachedDb, ZG.live ? 1 : 2);
+  if (cachedDb && cachedDb.products.length) show(cachedDb, 1);
   else grid.innerHTML = '<div class="loading"><i></i><i></i><i></i><i></i><i></i></div>';
-  if (ZG.live){
-    ZG.loadStatic().then(function(db){ show(db, 2); })['catch'](function(){});
-    ZG.loadLive().then(function(db){ show(db, 3); })['catch'](function(err){
-      console.warn('[Zenvora] Google Sheets injoignable, catalogue publié utilisé :', err && err.message);
-    });
-  } else {
-    ZG.load().then(function(db){ show(db, 2); });
-  }
+  ZG.load().then(function(db){ show(db, 2); });
   /* Filet de sécurité : rien après 9 s → catalogue de démonstration */
   setTimeout(function(){ if (rank < 0) show(ZG.seedDb(), 0); }, 9000);
 })();
