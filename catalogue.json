@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T14:32:53.401Z",
+ "updated": "2026-10-25T14:41:24.349Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,31 @@
   }
  ],
  "products": [
+  {
+   "id": "ensemble-enfants-filles-tres-bon-matiere-mvnxr9tb",
+   "num": "ZG-0230",
+   "name": "Ensemble enfants filles très bon matière",
+   "category": "enfants",
+   "price": 5.7,
+   "moq": 0,
+   "tagline": "Taille 1 ans à 12",
+   "description": "Ensemble enfants filles qualité supérieure toutes les tailles disponibles 1 à 12 ans\nCommandez dès maintenant",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161917-mvnxmbp2.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161918-mvnxmdtd.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161919-mvnxmfin.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161920-mvnxmh9t.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161922-mvnxmj7c.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161912-mvnxmlp8.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161913-mvnxmnag.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161914-mvnxmoq7.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161915-mvnxmqew.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161916-mvnxms2i.jpg"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
   {
    "id": "ensemble-enfants-filles-style-chemise-cu-mvnxgbko",
    "num": "ZG-0229",
