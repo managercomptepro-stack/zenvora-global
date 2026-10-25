@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T21:19:47.305Z",
+ "updated": "2026-10-25T21:25:08.230Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,27 @@
   }
  ],
  "products": [
+  {
+   "id": "canape-compresse-mvoc6h3a",
+   "num": "ZG-0239",
+   "name": "CANAPÉ COMPRESSÉ",
+   "category": "meubles",
+   "price": 73.62,
+   "moq": 0,
+   "tagline": "",
+   "description": "Canapé modulaire scandinave avec tissu en velours d'agneau couleur crème , zone de repos incurvé",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165632-mvoc2f7s.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165633-mvoc2hsg.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165630-mvoc2jtp.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165631-mvoc2lm3.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165634-mvoc2ngd.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165629-mvoc2psn.jpg"
+   ],
+   "featured": true,
+   "top": 25,
+   "active": true
+  },
   {
    "id": "canape-compresse-mvobzlgp",
    "num": "ZG-0238",
