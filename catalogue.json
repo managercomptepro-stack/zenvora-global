@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T14:54:23.527Z",
+ "updated": "2026-10-25T15:00:08.227Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,31 @@
   }
  ],
  "products": [
+  {
+   "id": "jolie-robe-enfants-made-in-turquie-mvnyfd0g",
+   "num": "ZG-0232",
+   "name": "Jolie Robe 👗 enfants made in TURQUIE",
+   "category": "enfants",
+   "price": 5.9,
+   "moq": 0,
+   "tagline": "Âge 1... 6 ans",
+   "description": "Jolie Robe de princesse pour enfants \nÂge 1.... 6 ans \nCommandez maintenant",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001162287-mvnyb10t.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001162286-mvnyb3pg.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001162288-mvnyb5i8.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001162279-mvnyb7ot.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001162281-mvnyb9f9.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001162280-mvnybbp1.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001162283-mvnybdnh.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001162282-mvnybftm.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001162285-mvnybi0m.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001162284-mvnybjmt.jpg"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
   {
    "id": "pulls-enfants-pour-noel-mvnxx51r",
    "num": "ZG-0231",
