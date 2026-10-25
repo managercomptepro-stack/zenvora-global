@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T15:33:55.037Z",
+ "updated": "2026-10-25T21:01:53.935Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,30 @@
   }
  ],
  "products": [
+  {
+   "id": "canape-compresse-mvobcl8t",
+   "num": "ZG-0235",
+   "name": "CANAPÉ COMPRESSÉ",
+   "category": "meubles",
+   "price": 149.5,
+   "moq": 0,
+   "tagline": "",
+   "description": "Canapé-lit comprimé d'angle en velours luxe et moderne avec fonctionnalités ajustable Désign Durable pour Salon fauteuil sans structure apparente",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165511-mvob3i91.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165531-mvob3liz.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165510-mvob3ng3.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165532-mvob3pzl.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165527-mvob3t36.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165509-mvob3vmj.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165528-mvob3yax.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165529-mvob40u9.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165530-mvob431j.jpg"
+   ],
+   "featured": true,
+   "top": 21,
+   "active": true
+  },
   {
    "id": "bottes-mschf-2x4-brutal-mvnzlsoh",
    "num": "ZG-0234",
