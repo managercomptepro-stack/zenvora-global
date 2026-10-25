@@ -24,6 +24,10 @@ const GITHUB_BRANCH = "main";
    (true = le site les sert lui-même, sans dépendre d'Unsplash) */
 const LOCAL_PHOTOS = true;
 
+/* true = les photos (assets/photos, assets/uploads) sont copiées avec le site
+   (hébergement public_html). false = elles sont servies depuis GitHub (Netlify). */
+const SITE_HAS_PHOTOS = false;
+
 /* ---------------------------------------------------------------------------
    2. RÉGLAGES PAR DÉFAUT
    (remplacés par ceux de l'onglet « Réglages » de l'espace de gestion)

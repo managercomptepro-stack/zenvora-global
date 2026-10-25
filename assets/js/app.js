@@ -9,7 +9,10 @@
 
   var doc = document.documentElement;
   doc.classList.add('js-on');
+  /* « Réduire les animations » (souvent activé d'office sous Windows) : on garde le site vivant,
+     mais en fondus seulement, sans mouvements amples. */
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) doc.classList.add('rm');
   var CFG = SHOP_CONFIG;
   var STORE_CART = 'zg-liste';
   var STORE_CLIENT = 'zg-client';
@@ -42,7 +45,7 @@
     var cls = o.cls ? ' class="' + o.cls + '"' : '';
     var load = o.eager ? ' fetchpriority="high"' : ' loading="lazy"';
     var loc = ZG.local(src);
-    if (loc) return '<img' + cls + ' src="' + esc(loc) + '" data-fb="' + esc(ZG.sized(src, 800)) + '" alt="' + esc(o.alt || '') + '"' + load + ' decoding="async">';
+    if (loc){ var fb = ZG.fallback(src); return '<img' + cls + ' src="' + esc(loc) + '"' + (fb && fb !== loc ? ' data-fb="' + esc(fb) + '"' : '') + ' alt="' + esc(o.alt || '') + '"' + load + ' decoding="async">'; }
     var resizable = /images\.unsplash\.com|lh3\.googleusercontent\.com\/d\//.test(src);
     if (!resizable) return '<img' + cls + ' src="' + esc(src) + '" alt="' + esc(o.alt || '') + '"' + load + ' decoding="async">';
     var ws = o.widths || [360, 600, 900];
@@ -91,6 +94,7 @@
     renderMenu();
     renderShelves();
     renderCats();
+    watchReveal();
     renderGrid();
     cart = sanitizeCart(cart);
     renderCart();
@@ -102,7 +106,7 @@
   function renderStatic(){
     var minTxt = usd(S.minOrderUSD);
     ['tbMin', 'shopMin'].forEach(function(k){ var el = $(k); if (el) el.textContent = minTxt; });
-    $('heroCount').textContent = LIVE_P.length;
+    countUp($('heroCount'), LIVE_P.length);
     $('heroCountries').textContent = CFG.countries.length;
     $('heroCatsN').textContent = DB.categories.filter(function(c){ return catItems(c.key).length; }).length;
     $('year').textContent = new Date().getFullYear();
@@ -143,7 +147,7 @@
      ============================================================ */
   var track = $('carTrack'), carBox = $('carousel');
   var slides = [];
-  var SPEED = window.innerWidth < 760 ? 46 : 58;    /* px par seconde */
+  var SPEED = window.innerWidth < 760 ? 92 : 116;   /* px par seconde */
   var RESUME = 3000;
   var pos = 0, last = 0, held = false, seen = true, smoothing = false, holdTimer = null, ticking = false;
 
@@ -182,7 +186,7 @@
   function tick(now){
     requestAnimationFrame(tick);
     var dt = last ? Math.min(now - last, 64) : 16; last = now;
-    if (reduce || held || smoothing || document.hidden || !seen || !slides.length) return;
+    if (held || smoothing || document.hidden || !seen || !slides.length) return;
     pos = wrapX(pos + SPEED * dt / 1000);
     track.scrollLeft = pos;
   }
@@ -368,7 +372,7 @@
 
   function cardHTML(p, i, shelf){
     var m = minQ(p);
-    return '<article class="card' + (shelf ? ' in' : '') + '" style="--d:' + ((i % PAGE) % 5) * 60 + 'ms">'
+    return '<article class="card" style="--d:' + (shelf ? (i % 6) * 70 : ((i % PAGE) % 5) * 70) + 'ms">'
       + '<button type="button" class="card-hit" data-open-product="' + esc(p.id) + '" aria-label="' + esc(p.name + ', ' + plain(usd(p.price))) + '">'
       +   '<span class="card-media fitbox">'
       +     pic(p.images[0], {alt:p.name, eager:i < 4, sizes:'(max-width:760px) 50vw, (max-width:1200px) 25vw, 20vw'})
@@ -421,11 +425,11 @@
     }
   }
 
-  var cardIO = ('IntersectionObserver' in window && !reduce) ? new IntersectionObserver(function(en){
+  var cardIO = ('IntersectionObserver' in window) ? new IntersectionObserver(function(en){
     en.forEach(function(x){ if (x.isIntersecting){ x.target.classList.add('in'); cardIO.unobserve(x.target); } });
   }, {threshold:.05, rootMargin:'0px 0px -3% 0px'}) : null;
   function watchCards(){
-    Array.prototype.forEach.call(grid.querySelectorAll('.card:not(.in)'), function(c){
+    Array.prototype.forEach.call(document.querySelectorAll('#grid .card:not(.in), #shelves .card:not(.in)'), function(c){
       if (cardIO) cardIO.observe(c); else c.classList.add('in');
     });
   }
@@ -546,25 +550,32 @@
      CALQUES (fiche produit, liste)
      ============================================================ */
   var stack = [], returnFocus = {};
+  /* Ouverture et fermeture animées : la classe is-open déclenche les transitions CSS,
+     le calque n'est masqué qu'une fois l'animation de sortie terminée. */
+  var closing = {};
   function openLayer(id, opener){
     var el = $(id);
-    if (!el.hidden) return;
-    returnFocus[id] = opener || document.activeElement;
+    if (closing[id]){ clearTimeout(closing[id]); closing[id] = null; }
+    else if (!el.hidden) return;
+    else returnFocus[id] = opener || document.activeElement;
     el.hidden = false;
-    stack.push(id);
+    if (stack.indexOf(id) < 0) stack.push(id);
     doc.classList.add('is-locked');
+    void el.offsetWidth;
+    requestAnimationFrame(function(){ el.classList.add('is-open'); });
     var f = el.querySelector('.x-btn');
-    if (f) setTimeout(function(){ f.focus({preventScroll:true}); }, 30);
+    if (f) setTimeout(function(){ f.focus({preventScroll:true}); }, 40);
   }
   function closeLayer(id){
     var el = $(id);
-    if (!el || el.hidden) return;
-    el.hidden = true;
+    if (!el || el.hidden || closing[id]) return;
+    el.classList.remove('is-open');
     stack = stack.filter(function(s){ return s !== id; });
     if (id === 'pm') clearHash();
     if (!stack.length) doc.classList.remove('is-locked');
     var r = returnFocus[id];
     if (r && r.focus && document.contains(r)) r.focus({preventScroll:true});
+    closing[id] = setTimeout(function(){ el.hidden = true; closing[id] = null; }, 300);
   }
   document.addEventListener('click', function(e){
     var c = e.target.closest('[data-close]');
@@ -877,6 +888,46 @@
     goWhatsApp(msg);
   });
   $('cCity').addEventListener('input', function(){ $('cartErr').textContent = ''; });
+
+  /* ---------------- Apparitions au défilement ----------------
+     Les blocs marqués data-rv montent en fondu quand ils arrivent à l'écran.
+     Sécurité : tout est affiché au bout de 3 s même si l'observateur ne répond pas. */
+  var rvIO = ('IntersectionObserver' in window) ? new IntersectionObserver(function(en){
+    en.forEach(function(x){ if (x.isIntersecting){ var t = x.target; t.classList.add('rv-in'); rvIO.unobserve(t); setTimeout(function(){ t.style.removeProperty('--rv-d'); }, 1400); } });
+  }, {threshold:.08, rootMargin:'0px 0px -5% 0px'}) : null;
+  function watchReveal(){
+    var sel = '.sec-head, .ray, .shelf-head, .shop-meta, .ship-card, .steps li, .foot-top, .foot-cats';
+    Array.prototype.forEach.call(document.querySelectorAll(sel), function(el, i){
+      if (el.hasAttribute('data-rv')) return;
+      el.setAttribute('data-rv', '');
+      var sib = el.parentNode ? Array.prototype.indexOf.call(el.parentNode.children, el) : 0;
+      el.style.setProperty('--rv-d', Math.min(sib, 8) * 55 + 'ms');
+      if (rvIO) rvIO.observe(el); else el.classList.add('rv-in');
+    });
+    setTimeout(function(){
+      Array.prototype.forEach.call(document.querySelectorAll('[data-rv]:not(.rv-in)'), function(el){
+        var r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight && r.bottom > 0) el.classList.add('rv-in');
+      });
+      Array.prototype.forEach.call(document.querySelectorAll('#grid .card:not(.in), #shelves .card:not(.in)'), function(c){
+        var r = c.getBoundingClientRect();
+        if (r.top < window.innerHeight && r.bottom > 0) c.classList.add('in');
+      });
+    }, 3000);
+  }
+
+  /* Compteur animé du hero (0 → nombre de produits) */
+  var counted = false;
+  function countUp(el, to){
+    if (counted || !to){ el.textContent = to; return; }
+    counted = true;
+    var t0 = performance.now(), dur = 900;
+    (function step(now){
+      var k = Math.min(1, (now - t0) / dur), e = 1 - Math.pow(1 - k, 3);
+      el.textContent = Math.round(to * e);
+      if (k < 1) requestAnimationFrame(step);
+    })(t0);
+  }
 
   /* ---------------- Notifications ---------------- */
   function toast(p, html, label, action){

@@ -41,10 +41,20 @@
   })();
   /* Adresse publique d'un fichier du dépôt : photos de démo sur le CDN jsDelivr,
      photos envoyées depuis la gestion sur raw (disponibles immédiatement). */
+  var HAS_PHOTOS = typeof SITE_HAS_PHOTOS !== 'undefined' && !!SITE_HAS_PHOTOS;
+  function remoteUrl(path){ return GH_MODE ? (/^assets\/uploads\//.test(path) ? RAW : CDN) + path : ROOT + path; }
   function assetUrl(path){
     if (!/^assets\//.test(path)) return path;
-    if (GH_MODE) return (/^assets\/uploads\//.test(path) ? RAW : CDN) + path;
-    return ROOT + path;
+    /* Site hébergé avec ses photos (public_html) : on les sert d'ici, GitHub en secours */
+    if (HAS_PHOTOS || !GH_MODE) return ROOT + path;
+    return remoteUrl(path);
+  }
+  /* Ramène une adresse GitHub de ce dépôt (raw / jsDelivr) à son chemin assets/… */
+  function repoPath(src){
+    src = String(src || '');
+    if (RAW && src.indexOf(RAW) === 0) return src.slice(RAW.length);
+    if (CDN && src.indexOf(CDN) === 0) return src.slice(CDN.length);
+    return /^assets\//.test(src) ? src : '';
   }
 
   /* ---------------- Normalisation ---------------- */
@@ -117,9 +127,17 @@
   function unsplashId(src){ var m = /images\.unsplash\.com\/(photo-[A-Za-z0-9-]+)/.exec(src || ''); return m ? m[1] : ''; }
   /* Copie hébergée avec le site d'une photo de démonstration (sinon '') */
   function local(src){
-    if (/^assets\//.test(src || '')) return assetUrl(src);
+    var rp = repoPath(src);
+    if (rp) return HAS_PHOTOS ? ROOT + rp : assetUrl(rp);
     var id = LOCAL && unsplashId(src);
     return id ? assetUrl('assets/photos/' + id + '.jpg') : '';
+  }
+  /* Adresse de secours si la photo locale manque (ex. ajoutée depuis la gestion après l'export) */
+  function fallback(src){
+    var rp = repoPath(src), id = unsplashId(src);
+    if (rp) return HAS_PHOTOS ? remoteUrl(rp) : '';
+    if (id) return HAS_PHOTOS && GH_MODE ? remoteUrl('assets/photos/' + id + '.jpg') : sized(src, 800);
+    return '';
   }
   /* Photo redimensionnée selon l'hébergeur */
   function sized(src, w){
@@ -377,7 +395,7 @@
     live: GH_MODE, repo: REPO, endpoint: ENDPOINT,
     load: load, loadStatic: loadStatic, cached: cached, logRequest: logRequest,
     minQty: minQty, qtyStep: qtyStep, fmtUSD: fmtUSD, fmtXOF: fmtXOF, toXof: toXof,
-    sized: sized, local: local, assetUrl: assetUrl, normProduct: normProduct, seedDb: seedDb, store: ls,
+    sized: sized, local: local, fallback: fallback, assetUrl: assetUrl, normProduct: normProduct, seedDb: seedDb, store: ls,
     admin: admin
   };
 })();
