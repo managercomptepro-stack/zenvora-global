@@ -227,7 +227,7 @@ function prochainNumero_(sh){
   return 'ZG-' + ('000' + (max + 1)).slice(-4);
 }
 function slug_(s){
-  return String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+  return String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
     .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 40) || 'produit';
 }
 function vrai_(v){ return v === true || /^(oui|true|1|x|yes)$/i.test(String(v).trim()); }

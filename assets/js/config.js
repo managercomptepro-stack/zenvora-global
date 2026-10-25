@@ -13,7 +13,7 @@
    Tant que ce champ est vide, le site tourne en « mode démo » :
    catalogue de démonstration + espace de gestion enregistré sur l'appareil.
    --------------------------------------------------------------------------- */
-const CATALOGUE_ENDPOINT = "";
+const CATALOGUE_ENDPOINT = "https://script.google.com/macros/s/AKfycbwKcKezrDnVH0cU0LC8rMKoTwun3IcDRqGiAs8gG7bX4BjnvPFKrXngnB-bNdzFRM-R/exec";
 
 /* Photos du catalogue de démonstration copiées dans assets/photos/
    (true = le site les sert lui-même, sans dépendre d'Unsplash) */
