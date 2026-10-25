@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T14:21:33.611Z",
+ "updated": "2026-10-25T14:27:58.969Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,29 @@
   }
  ],
  "products": [
+  {
+   "id": "ensemble-enfants-polo-culotte-mvnxa0e1",
+   "num": "ZG-0228",
+   "name": "Ensemble enfants Polo + culotte 👖",
+   "category": "enfants",
+   "price": 6.94,
+   "moq": 0,
+   "tagline": "1 ans .... 10 ans",
+   "description": "Ensemble enfants t-shirt polo + culotte jeans très bonne matière. Toutes les tailles disponibles ........ Commandez maintenant",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161740-mvnx3dod.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161741-mvnx3g39.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161742-mvnx3hnx.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161743-mvnx3jl9.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161744-mvnx3l2m.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161745-mvnx3msa.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161746-mvnx3oxd.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161739-mvnx3qnp.jpg"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
   {
    "id": "ensemble-enfants-jean-tres-bonne-qualite-mvnx1981",
    "num": "ZG-0227",
