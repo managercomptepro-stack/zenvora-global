@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T14:27:58.969Z",
+ "updated": "2026-10-25T14:32:53.401Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,31 @@
   }
  ],
  "products": [
+  {
+   "id": "ensemble-enfants-filles-style-chemise-cu-mvnxgbko",
+   "num": "ZG-0229",
+   "name": "Ensemble enfants filles stylé chemise + culotte",
+   "category": "enfants",
+   "price": 6.89,
+   "moq": 0,
+   "tagline": "Taille : 2ans....... 12 ans",
+   "description": "Ensemble enfants filles qualité supérieure \nToutes les tailles disponibles de 2 à 12 ans disponible, commandez maintenant",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161770-mvnxbipj.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161771-mvnxbl5v.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161772-mvnxbmoq.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161773-mvnxbomj.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161774-mvnxbqci.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161775-mvnxbs5h.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161776-mvnxbtxy.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161777-mvnxbw1t.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161778-mvnxbxz6.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161779-mvnxbzoh.jpg"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
   {
    "id": "ensemble-enfants-polo-culotte-mvnxa0e1",
    "num": "ZG-0228",
