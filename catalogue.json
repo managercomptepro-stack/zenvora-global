@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T14:13:25.820Z",
+ "updated": "2026-10-25T14:21:10.514Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,30 @@
   }
  ],
  "products": [
+  {
+   "id": "ensemble-enfants-jean-tres-bonne-qualite-mvnx1981",
+   "num": "ZG-0227",
+   "name": "Ensemble enfants Jean très bonne qualité",
+   "category": "enfants",
+   "price": 7.24,
+   "moq": 0,
+   "tagline": "Tout les tailles disponibles et couleurs",
+   "description": "Ensemble enfants jeans 👖💯  qualité \nToutes les tailles et couleurs disponibles \nLes fêtes se préparent dès maintenant",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161660-mvnwtmkz.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161661-mvnwtp5g.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161662-mvnwtqni.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161663-mvnwts82.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161664-mvnwtu8p.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161665-mvnwtw6l.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161666-mvnwtyaq.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161667-mvnwu08m.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001161668-mvnwu22t.jpg"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
   {
    "id": "ensemble-enfant-t-shirt-short-cotton-mvnwranv",
    "num": "ZG-0226",
