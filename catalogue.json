@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T21:08:12.245Z",
+ "updated": "2026-10-25T21:13:57.204Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,25 @@
   }
  ],
  "products": [
+  {
+   "id": "canape-compresse-mvobs3bn",
+   "num": "ZG-0237",
+   "name": "CANAPÉ COMPRESSÉ",
+   "category": "meubles",
+   "price": 65.7,
+   "moq": 0,
+   "tagline": "",
+   "description": "Canapé d'angle convertible , en mousse déchiqueté de haute qualité",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165656-mvobplnd.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165659-mvobpjp6.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165658-mvobpgyg.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001165657-mvobpnhi.jpg"
+   ],
+   "featured": true,
+   "top": 23,
+   "active": true
+  },
   {
    "id": "canape-compresse-mvobkp5g",
    "num": "ZG-0236",
