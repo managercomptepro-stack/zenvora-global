@@ -1,0 +1,3818 @@
+{
+ "categories": [
+  {
+   "key": "motos",
+   "label": "Motos & tricycles",
+   "image": ""
+  },
+  {
+   "key": "voitures",
+   "label": "Voitures & utilitaires",
+   "image": ""
+  },
+  {
+   "key": "pieces-auto",
+   "label": "Pièces auto & pneus",
+   "image": ""
+  },
+  {
+   "key": "telephones",
+   "label": "Téléphones",
+   "image": ""
+  },
+  {
+   "key": "acc-tel",
+   "label": "Accessoires téléphone",
+   "image": ""
+  },
+  {
+   "key": "electronique",
+   "label": "TV, audio & sécurité",
+   "image": ""
+  },
+  {
+   "key": "informatique",
+   "label": "Informatique & bureau",
+   "image": ""
+  },
+  {
+   "key": "electromenager",
+   "label": "Électroménager",
+   "image": ""
+  },
+  {
+   "key": "solaire",
+   "label": "Énergie & solaire",
+   "image": ""
+  },
+  {
+   "key": "femmes",
+   "label": "Mode femme",
+   "image": ""
+  },
+  {
+   "key": "hommes",
+   "label": "Mode homme",
+   "image": ""
+  },
+  {
+   "key": "enfants",
+   "label": "Enfant & bébé",
+   "image": ""
+  },
+  {
+   "key": "chaussures",
+   "label": "Chaussures",
+   "image": ""
+  },
+  {
+   "key": "sacs",
+   "label": "Sacs & maroquinerie",
+   "image": ""
+  },
+  {
+   "key": "bijoux",
+   "label": "Bijoux, montres & lunettes",
+   "image": ""
+  },
+  {
+   "key": "textile",
+   "label": "Tissus & pagnes",
+   "image": ""
+  },
+  {
+   "key": "beaute",
+   "label": "Beauté & cheveux",
+   "image": ""
+  },
+  {
+   "key": "maison",
+   "label": "Cuisine & maison",
+   "image": ""
+  },
+  {
+   "key": "meubles",
+   "label": "Meubles",
+   "image": ""
+  },
+  {
+   "key": "construction",
+   "label": "Construction & sanitaire",
+   "image": ""
+  },
+  {
+   "key": "electricite",
+   "label": "Électricité & éclairage",
+   "image": ""
+  },
+  {
+   "key": "outils",
+   "label": "Outils & quincaillerie",
+   "image": ""
+  },
+  {
+   "key": "machines",
+   "label": "Machines & industrie",
+   "image": ""
+  },
+  {
+   "key": "agriculture",
+   "label": "Agriculture",
+   "image": ""
+  },
+  {
+   "key": "jouets",
+   "label": "Jouets & jeux",
+   "image": ""
+  },
+  {
+   "key": "sport",
+   "label": "Sport & vélos",
+   "image": ""
+  },
+  {
+   "key": "emballage",
+   "label": "Emballage & stockage",
+   "image": ""
+  },
+  {
+   "key": "papeterie",
+   "label": "Papeterie & scolaire",
+   "image": ""
+  }
+ ],
+ "products": [
+  {
+   "id": "moto-routiere-150-cc-1",
+   "num": "ZG-0001",
+   "name": "Moto routière 150 cc",
+   "category": "motos",
+   "price": 620,
+   "moq": 0,
+   "tagline": "Moto-taxi, usage quotidien",
+   "description": "Moto robuste et économique, la plus utilisée en moto-taxi. Livrée en caisse, montage sur place.",
+   "images": [
+    "https://images.unsplash.com/photo-1591637333184-19aa84b3e01f"
+   ],
+   "featured": true,
+   "top": 1,
+   "active": true
+  },
+  {
+   "id": "tricycle-cargo-motorise-2",
+   "num": "ZG-0002",
+   "name": "Tricycle cargo motorisé",
+   "category": "motos",
+   "price": 1350,
+   "moq": 0,
+   "tagline": "Benne arrière, 200 cc",
+   "description": "Tricycle de transport de marchandises, très demandé par les commerçants et livreurs.",
+   "images": [
+    "https://images.unsplash.com/photo-1791137612019-db68a897c837"
+   ],
+   "featured": true,
+   "top": 4,
+   "active": true
+  },
+  {
+   "id": "tricycle-electrique-a-paniers-3",
+   "num": "ZG-0003",
+   "name": "Tricycle électrique à paniers",
+   "category": "motos",
+   "price": 780,
+   "moq": 0,
+   "tagline": "Batterie lithium, silencieux",
+   "description": "Tricycle électrique pour livraisons urbaines et petits commerces.",
+   "images": [
+    "https://images.unsplash.com/photo-1758256554954-c19e82f54faa"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "moto-sportive-250-cc-4",
+   "num": "ZG-0004",
+   "name": "Moto sportive 250 cc",
+   "category": "motos",
+   "price": 1450,
+   "moq": 0,
+   "tagline": "Carénage intégral",
+   "description": "Moto sportive au look racé, pour une clientèle passionnée.",
+   "images": [
+    "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "moto-custom-200-cc-5",
+   "num": "ZG-0005",
+   "name": "Moto custom 200 cc",
+   "category": "motos",
+   "price": 980,
+   "moq": 0,
+   "tagline": "Style cruiser, selle basse",
+   "description": "Moto custom confortable pour les longs trajets.",
+   "images": [
+    "https://images.unsplash.com/photo-1596687760372-4c0d266059a7"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "moto-tout-terrain-200-cc-6",
+   "num": "ZG-0006",
+   "name": "Moto tout-terrain 200 cc",
+   "category": "motos",
+   "price": 890,
+   "moq": 0,
+   "tagline": "Pistes et brousse",
+   "description": "Moto trail adaptée aux routes non goudronnées.",
+   "images": [
+    "https://images.unsplash.com/photo-1606907568152-58fcb0a0a4e5"
+   ],
+   "featured": true,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "moto-naked-150-cc-7",
+   "num": "ZG-0007",
+   "name": "Moto naked 150 cc",
+   "category": "motos",
+   "price": 760,
+   "moq": 0,
+   "tagline": "Orange et noir",
+   "description": "Moto au style naked, moteur 150 cc économique.",
+   "images": [
+    "https://images.unsplash.com/photo-1609630875171-b1321377ee65",
+    "https://images.unsplash.com/photo-1588627541420-fce3f661b779"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "scooter-125-cc-8",
+   "num": "ZG-0008",
+   "name": "Scooter 125 cc",
+   "category": "motos",
+   "price": 540,
+   "moq": 0,
+   "tagline": "Automatique, coffre sous selle",
+   "description": "Scooter automatique 125 cc, idéal en ville.",
+   "images": [
+    "https://images.unsplash.com/photo-1554223789-df81106a45ed"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "scooter-retro-50-cc-9",
+   "num": "ZG-0009",
+   "name": "Scooter rétro 50 cc",
+   "category": "motos",
+   "price": 480,
+   "moq": 0,
+   "tagline": "Design vintage",
+   "description": "Scooter au style rétro, très apprécié en ville.",
+   "images": [
+    "https://images.unsplash.com/photo-1519750292352-c9fc17322ed7"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "scooter-jaune-125-cc-10",
+   "num": "ZG-0010",
+   "name": "Scooter jaune 125 cc",
+   "category": "motos",
+   "price": 560,
+   "moq": 0,
+   "tagline": "Coloris vifs au choix",
+   "description": "Scooter 125 cc disponible en plusieurs couleurs.",
+   "images": [
+    "https://images.unsplash.com/photo-1584737131144-5b76ba8c4147"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "scooter-electrique-11",
+   "num": "ZG-0011",
+   "name": "Scooter électrique",
+   "category": "motos",
+   "price": 690,
+   "moq": 0,
+   "tagline": "Recharge sur prise",
+   "description": "Scooter électrique silencieux, coût d'usage très faible.",
+   "images": [
+    "https://images.unsplash.com/photo-1547838277-a5db4d13e8c0"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "casque-integral-moto-12",
+   "num": "ZG-0012",
+   "name": "Casque intégral moto",
+   "category": "motos",
+   "price": 12.5,
+   "moq": 0,
+   "tagline": "Visière, tailles M à XL",
+   "description": "Casque intégral avec visière, à vendre avec chaque moto.",
+   "images": [
+    "https://images.unsplash.com/photo-1627530980937-b8721b91506a",
+    "https://images.unsplash.com/photo-1590506995460-d0d9892b54da"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "berline-compacte-essence-13",
+   "num": "ZG-0013",
+   "name": "Berline compacte essence",
+   "category": "voitures",
+   "price": 8900,
+   "moq": 0,
+   "tagline": "Boîte manuelle ou automatique",
+   "description": "Berline familiale économique. Modèle, année et options à confirmer selon le stock du fournisseur.",
+   "images": [
+    "https://images.unsplash.com/photo-1560009320-c01920eef9f8",
+    "https://images.unsplash.com/photo-1606400142640-69e81d222bcb"
+   ],
+   "featured": true,
+   "top": 2,
+   "active": true
+  },
+  {
+   "id": "suv-7-places-14",
+   "num": "ZG-0014",
+   "name": "SUV 7 places",
+   "category": "voitures",
+   "price": 15800,
+   "moq": 0,
+   "tagline": "Grand coffre, climatisation",
+   "description": "SUV familial spacieux, très demandé pour les flottes et les particuliers.",
+   "images": [
+    "https://images.unsplash.com/photo-1693532331766-bfcec4163ce4"
+   ],
+   "featured": true,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "citadine-rouge-15",
+   "num": "ZG-0015",
+   "name": "Citadine rouge",
+   "category": "voitures",
+   "price": 6900,
+   "moq": 0,
+   "tagline": "Petite consommation",
+   "description": "Petite voiture idéale en ville et pour les VTC.",
+   "images": [
+    "https://images.unsplash.com/photo-1550355291-bbee04a92027"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "berline-blanche-16",
+   "num": "ZG-0016",
+   "name": "Berline blanche",
+   "category": "voitures",
+   "price": 9800,
+   "moq": 0,
+   "tagline": "Taxi et VTC",
+   "description": "Berline robuste, la couleur blanche est la plus demandée pour les taxis.",
+   "images": [
+    "https://images.unsplash.com/photo-1722088386522-7cafb8a7e234",
+    "https://images.unsplash.com/photo-1668692753102-a9603d87a1a7"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "pick-up-double-cabine-4x4-17",
+   "num": "ZG-0017",
+   "name": "Pick-up double cabine 4x4",
+   "category": "voitures",
+   "price": 17500,
+   "moq": 0,
+   "tagline": "Diesel, plateau arrière",
+   "description": "Pick-up tout-terrain pour chantiers, plantations et transport.",
+   "images": [
+    "https://images.unsplash.com/photo-1686715018049-f73970aa97d3"
+   ],
+   "featured": true,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "pick-up-cabine-simple-18",
+   "num": "ZG-0018",
+   "name": "Pick-up cabine simple",
+   "category": "voitures",
+   "price": 12900,
+   "moq": 0,
+   "tagline": "Utilitaire de travail",
+   "description": "Pick-up de travail à grand plateau.",
+   "images": [
+    "https://images.unsplash.com/photo-1605504835488-e8c6d37beb43"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "camion-de-transport-19",
+   "num": "ZG-0019",
+   "name": "Camion de transport",
+   "category": "voitures",
+   "price": 28000,
+   "moq": 0,
+   "tagline": "Charge utile importante",
+   "description": "Camion pour transport de marchandises. Tonnage et carrosserie à préciser.",
+   "images": [
+    "https://images.unsplash.com/photo-1620844621455-fe8698f241d6",
+    "https://images.unsplash.com/photo-1616340786004-7c444e530ce3"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "camion-porteur-colore-20",
+   "num": "ZG-0020",
+   "name": "Camion porteur coloré",
+   "category": "voitures",
+   "price": 26500,
+   "moq": 0,
+   "tagline": "Routes difficiles",
+   "description": "Camion porteur robuste pour longues distances.",
+   "images": [
+    "https://images.unsplash.com/photo-1681004478577-cb7f8421f78c"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "petit-camion-utilitaire-21",
+   "num": "ZG-0021",
+   "name": "Petit camion utilitaire",
+   "category": "voitures",
+   "price": 9500,
+   "moq": 0,
+   "tagline": "Livraisons en ville",
+   "description": "Mini-camion pour livraisons urbaines, faible consommation.",
+   "images": [
+    "https://images.unsplash.com/photo-1721976090805-7bb3f8b00a7d"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "berline-noire-haut-de-gamme-22",
+   "num": "ZG-0022",
+   "name": "Berline noire haut de gamme",
+   "category": "voitures",
+   "price": 21000,
+   "moq": 0,
+   "tagline": "Finitions premium",
+   "description": "Berline confortable pour clientèle d'affaires et location.",
+   "images": [
+    "https://images.unsplash.com/photo-1541447270888-83e8494f9c06"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "pneus-tourisme-lot-23",
+   "num": "ZG-0023",
+   "name": "Pneus tourisme (lot)",
+   "category": "pieces-auto",
+   "price": 32,
+   "moq": 0,
+   "tagline": "Toutes dimensions",
+   "description": "Pneus neufs pour voitures, dimensions selon vos besoins.",
+   "images": [
+    "https://images.unsplash.com/photo-1571335746824-742511d49bce",
+    "https://images.unsplash.com/photo-1760836395767-d469a16b7f21"
+   ],
+   "featured": false,
+   "top": 9,
+   "active": true
+  },
+  {
+   "id": "pneus-pour-camions-24",
+   "num": "ZG-0024",
+   "name": "Pneus pour camions",
+   "category": "pieces-auto",
+   "price": 145,
+   "moq": 0,
+   "tagline": "Poids lourds",
+   "description": "Pneus renforcés pour camions et bus.",
+   "images": [
+    "https://images.unsplash.com/photo-1578844251758-2f71da64c96f"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "jantes-alliage-25",
+   "num": "ZG-0025",
+   "name": "Jantes alliage",
+   "category": "pieces-auto",
+   "price": 48,
+   "moq": 0,
+   "tagline": "15 à 18 pouces",
+   "description": "Jantes en alliage, plusieurs designs.",
+   "images": [
+    "https://images.unsplash.com/photo-1601411101851-ea0e07766235",
+    "https://images.unsplash.com/photo-1616788902258-138db56fe7e5"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "disques-et-etriers-de-frein-26",
+   "num": "ZG-0026",
+   "name": "Disques et étriers de frein",
+   "category": "pieces-auto",
+   "price": 22,
+   "moq": 0,
+   "tagline": "Freinage complet",
+   "description": "Disques, plaquettes et étriers pour les modèles les plus courants.",
+   "images": [
+    "https://images.unsplash.com/photo-1760317890314-e964ffd7e6a6",
+    "https://images.unsplash.com/photo-1760317890322-364a810cd4da"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "batterie-auto-12-v-27",
+   "num": "ZG-0027",
+   "name": "Batterie auto 12 V",
+   "category": "pieces-auto",
+   "price": 38,
+   "moq": 0,
+   "tagline": "60 à 100 Ah",
+   "description": "Batteries de démarrage pour voitures et utilitaires.",
+   "images": [
+    "https://images.unsplash.com/photo-1676337167629-d896b3ed5724"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "pieces-moteur-28",
+   "num": "ZG-0028",
+   "name": "Pièces moteur",
+   "category": "pieces-auto",
+   "price": 18,
+   "moq": 0,
+   "tagline": "Sur référence",
+   "description": "Pièces moteur à commander sur référence : filtres, courroies, pompes, joints.",
+   "images": [
+    "https://images.unsplash.com/photo-1666148647370-8730124d1376",
+    "https://images.unsplash.com/photo-1632733711679-529326f6db12"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "pneus-et-jante-montes-29",
+   "num": "ZG-0029",
+   "name": "Pneus et jante montés",
+   "category": "pieces-auto",
+   "price": 65,
+   "moq": 0,
+   "tagline": "Prêt à poser",
+   "description": "Roues complètes montées et équilibrées.",
+   "images": [
+    "https://images.unsplash.com/photo-1444947295498-07f60c19a4ff"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "stock-de-pneus-d-occasion-30",
+   "num": "ZG-0030",
+   "name": "Stock de pneus d'occasion",
+   "category": "pieces-auto",
+   "price": 9,
+   "moq": 0,
+   "tagline": "Vrac, tailles mélangées",
+   "description": "Lot de pneus pour revente, prix au pneu.",
+   "images": [
+    "https://images.unsplash.com/photo-1477823986828-5aff156284aa"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "smartphone-android-6-5-pouces-31",
+   "num": "ZG-0031",
+   "name": "Smartphone Android 6,5 pouces",
+   "category": "telephones",
+   "price": 68,
+   "moq": 0,
+   "tagline": "Double SIM, 64 Go",
+   "description": "Smartphone grand écran double SIM. Configuration à confirmer avec le fournisseur.",
+   "images": [
+    "https://images.unsplash.com/photo-1592890288564-76628a30a657"
+   ],
+   "featured": true,
+   "top": 3,
+   "active": true
+  },
+  {
+   "id": "smartphone-dos-degrade-32",
+   "num": "ZG-0032",
+   "name": "Smartphone dos dégradé",
+   "category": "telephones",
+   "price": 85,
+   "moq": 0,
+   "tagline": "128 Go, triple caméra",
+   "description": "Smartphone au dos en verre dégradé, très apprécié pour son design.",
+   "images": [
+    "https://images.unsplash.com/photo-1787734081268-01a06df25f4a"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "smartphone-ecran-incurve-33",
+   "num": "ZG-0033",
+   "name": "Smartphone écran incurvé",
+   "category": "telephones",
+   "price": 120,
+   "moq": 0,
+   "tagline": "Haut de gamme",
+   "description": "Écran incurvé bord à bord, grande autonomie.",
+   "images": [
+    "https://images.unsplash.com/photo-1772831902679-3f41c106d7a2"
+   ],
+   "featured": true,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "smartphone-ecran-amoled-34",
+   "num": "ZG-0034",
+   "name": "Smartphone écran AMOLED",
+   "category": "telephones",
+   "price": 95,
+   "moq": 0,
+   "tagline": "Couleurs éclatantes",
+   "description": "Smartphone à écran AMOLED, 128 Go de stockage.",
+   "images": [
+    "https://images.unsplash.com/photo-1598327105666-5b89351aff97"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "smartphone-entree-de-gamme-35",
+   "num": "ZG-0035",
+   "name": "Smartphone entrée de gamme",
+   "category": "telephones",
+   "price": 42,
+   "moq": 0,
+   "tagline": "Prix serré, double SIM",
+   "description": "Le téléphone le plus vendu en volume : simple, robuste, économique.",
+   "images": [
+    "https://images.unsplash.com/photo-1596207891316-23851be3cc20"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "smartphone-blanc-36",
+   "num": "ZG-0036",
+   "name": "Smartphone blanc",
+   "category": "telephones",
+   "price": 74,
+   "moq": 0,
+   "tagline": "Design épuré",
+   "description": "Smartphone blanc, 64 ou 128 Go.",
+   "images": [
+    "https://images.unsplash.com/photo-1634403665481-74948d815f03"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "smartphone-128-go-37",
+   "num": "ZG-0037",
+   "name": "Smartphone 128 Go",
+   "category": "telephones",
+   "price": 99,
+   "moq": 0,
+   "tagline": "Grande mémoire",
+   "description": "Smartphone 128 Go, batterie longue durée.",
+   "images": [
+    "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "smartphone-grand-ecran-38",
+   "num": "ZG-0038",
+   "name": "Smartphone grand écran",
+   "category": "telephones",
+   "price": 135,
+   "moq": 0,
+   "tagline": "6,8 pouces",
+   "description": "Très grand écran, idéal vidéo et réseaux sociaux.",
+   "images": [
+    "https://images.unsplash.com/photo-1600577231598-31ea4cb50da3"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "tablette-android-10-pouces-39",
+   "num": "ZG-0039",
+   "name": "Tablette Android 10 pouces",
+   "category": "telephones",
+   "price": 78,
+   "moq": 0,
+   "tagline": "Wi-Fi + SIM",
+   "description": "Tablette pour études, bureau et divertissement.",
+   "images": [
+    "https://images.unsplash.com/photo-1623126908029-58cb08a2b272",
+    "https://images.unsplash.com/photo-1604399852419-f67ee7d5f2ef"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "ecouteurs-sans-fil-bluetooth-40",
+   "num": "ZG-0040",
+   "name": "Écouteurs sans fil Bluetooth",
+   "category": "acc-tel",
+   "price": 3.8,
+   "moq": 0,
+   "tagline": "Boîtier de charge",
+   "description": "Écouteurs sans fil avec boîtier de recharge. Emballage personnalisable.",
+   "images": [
+    "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46",
+    "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1"
+   ],
+   "featured": true,
+   "top": 6,
+   "active": true
+  },
+  {
+   "id": "ecouteurs-sans-fil-noirs-41",
+   "num": "ZG-0041",
+   "name": "Écouteurs sans fil noirs",
+   "category": "acc-tel",
+   "price": 3.2,
+   "moq": 0,
+   "tagline": "Compacts",
+   "description": "Écouteurs Bluetooth compacts, son clair.",
+   "images": [
+    "https://images.unsplash.com/photo-1578319439584-104c94d37305"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "batterie-externe-10-000-mah-42",
+   "num": "ZG-0042",
+   "name": "Batterie externe 10 000 mAh",
+   "category": "acc-tel",
+   "price": 4.6,
+   "moq": 0,
+   "tagline": "Double sortie USB",
+   "description": "Batterie de secours, indispensable face aux coupures d'électricité.",
+   "images": [
+    "https://images.unsplash.com/photo-1566554738544-d962991c3fee"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "batterie-externe-20-000-mah-43",
+   "num": "ZG-0043",
+   "name": "Batterie externe 20 000 mAh",
+   "category": "acc-tel",
+   "price": 7.2,
+   "moq": 0,
+   "tagline": "Grande capacité",
+   "description": "Plusieurs recharges complètes.",
+   "images": [
+    "https://images.unsplash.com/photo-1706275399494-fb26bbc5da63"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "cables-usb-c-et-lightning-44",
+   "num": "ZG-0044",
+   "name": "Câbles USB-C et Lightning",
+   "category": "acc-tel",
+   "price": 0.45,
+   "moq": 0,
+   "tagline": "1 m, gaine renforcée",
+   "description": "Câbles de charge et de données.",
+   "images": [
+    "https://images.unsplash.com/photo-1585995603413-eb35b5f4a50b"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "chargeur-secteur-rapide-45",
+   "num": "ZG-0045",
+   "name": "Chargeur secteur rapide",
+   "category": "acc-tel",
+   "price": 1.9,
+   "moq": 0,
+   "tagline": "Charge rapide",
+   "description": "Chargeur mural USB.",
+   "images": [
+    "https://images.unsplash.com/photo-1635861321688-b63d28749a82"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "coques-de-protection-46",
+   "num": "ZG-0046",
+   "name": "Coques de protection",
+   "category": "acc-tel",
+   "price": 0.9,
+   "moq": 0,
+   "tagline": "Tous modèles",
+   "description": "Coques assorties selon les téléphones les plus vendus.",
+   "images": [
+    "https://images.unsplash.com/photo-1594843665794-446ce915d840"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "kit-ecouteurs-coque-et-chargeur-47",
+   "num": "ZG-0047",
+   "name": "Kit écouteurs, coque et chargeur",
+   "category": "acc-tel",
+   "price": 5.5,
+   "moq": 0,
+   "tagline": "Pack revente",
+   "description": "Lot d'accessoires pour boutiques de téléphonie.",
+   "images": [
+    "https://images.unsplash.com/photo-1639521234037-8160317e81d9"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "casque-audio-48",
+   "num": "ZG-0048",
+   "name": "Casque audio",
+   "category": "acc-tel",
+   "price": 6.8,
+   "moq": 0,
+   "tagline": "Arceau réglable",
+   "description": "Casque filaire ou Bluetooth.",
+   "images": [
+    "https://images.unsplash.com/photo-1590658268037-6bf12165a8df"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "televiseur-led-43-pouces-49",
+   "num": "ZG-0049",
+   "name": "Téléviseur LED 43 pouces",
+   "category": "electronique",
+   "price": 128,
+   "moq": 0,
+   "tagline": "Full HD",
+   "description": "Téléviseur LED 43 pouces, HDMI et USB.",
+   "images": [
+    "https://images.unsplash.com/photo-1593784991251-92ded75ea290"
+   ],
+   "featured": true,
+   "top": 7,
+   "active": true
+  },
+  {
+   "id": "smart-tv-55-pouces-50",
+   "num": "ZG-0050",
+   "name": "Smart TV 55 pouces",
+   "category": "electronique",
+   "price": 210,
+   "moq": 0,
+   "tagline": "4K, applications",
+   "description": "Téléviseur connecté 55 pouces.",
+   "images": [
+    "https://images.unsplash.com/photo-1595935736128-db1f0a261263"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "televiseur-32-pouces-51",
+   "num": "ZG-0051",
+   "name": "Téléviseur 32 pouces",
+   "category": "electronique",
+   "price": 85,
+   "moq": 0,
+   "tagline": "Format compact",
+   "description": "Idéal chambres et petits salons.",
+   "images": [
+    "https://images.unsplash.com/photo-1597406462637-eb560874d1f8"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "enceinte-bluetooth-portable-52",
+   "num": "ZG-0052",
+   "name": "Enceinte Bluetooth portable",
+   "category": "electronique",
+   "price": 9.5,
+   "moq": 0,
+   "tagline": "Autonomie longue",
+   "description": "Enceinte sans fil, son puissant.",
+   "images": [
+    "https://images.unsplash.com/photo-1589003077984-894e133dabab"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "enceinte-nomade-blanche-53",
+   "num": "ZG-0053",
+   "name": "Enceinte nomade blanche",
+   "category": "electronique",
+   "price": 7.8,
+   "moq": 0,
+   "tagline": "Format de poche",
+   "description": "Petite enceinte Bluetooth.",
+   "images": [
+    "https://images.unsplash.com/photo-1582978571763-2d039e56f0c3"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "cameras-de-surveillance-54",
+   "num": "ZG-0054",
+   "name": "Caméras de surveillance",
+   "category": "electronique",
+   "price": 14,
+   "moq": 0,
+   "tagline": "Vision nocturne",
+   "description": "Caméras de vidéosurveillance pour boutiques, maisons et entrepôts.",
+   "images": [
+    "https://images.unsplash.com/photo-1557597774-9d273605dfa9",
+    "https://images.unsplash.com/photo-1563920443079-783e5c786b83"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "camera-exterieure-sur-mat-55",
+   "num": "ZG-0055",
+   "name": "Caméra extérieure sur mât",
+   "category": "electronique",
+   "price": 19,
+   "moq": 0,
+   "tagline": "Étanche",
+   "description": "Caméra extérieure résistante aux intempéries.",
+   "images": [
+    "https://images.unsplash.com/photo-1589935447067-5531094415d1"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "radio-rechargeable-56",
+   "num": "ZG-0056",
+   "name": "Radio rechargeable",
+   "category": "electronique",
+   "price": 6.5,
+   "moq": 0,
+   "tagline": "FM, USB, Bluetooth",
+   "description": "Radio portable rechargeable.",
+   "images": [
+    "https://images.unsplash.com/photo-1650785652040-5a2fc88ce902"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "montre-connectee-57",
+   "num": "ZG-0057",
+   "name": "Montre connectée",
+   "category": "electronique",
+   "price": 6.9,
+   "moq": 0,
+   "tagline": "Notifications, sport",
+   "description": "Notifications, podomètre, fréquence cardiaque.",
+   "images": [
+    "https://images.unsplash.com/photo-1579586337278-3befd40fd17a",
+    "https://images.unsplash.com/photo-1624096104992-9b4fa3a279dd"
+   ],
+   "featured": true,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "manette-de-jeu-sans-fil-58",
+   "num": "ZG-0058",
+   "name": "Manette de jeu sans fil",
+   "category": "electronique",
+   "price": 5.2,
+   "moq": 0,
+   "tagline": "PC et mobile",
+   "description": "Manette sans fil pour jeux vidéo.",
+   "images": [
+    "https://images.unsplash.com/photo-1655560378428-7605bda51749"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "ordinateur-portable-15-pouces-59",
+   "num": "ZG-0059",
+   "name": "Ordinateur portable 15 pouces",
+   "category": "informatique",
+   "price": 185,
+   "moq": 0,
+   "tagline": "Bureautique",
+   "description": "Pour études et bureau.",
+   "images": [
+    "https://images.unsplash.com/photo-1531297484001-80022131f5a1"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "ordinateur-portable-fin-14-pouces-60",
+   "num": "ZG-0060",
+   "name": "Ordinateur portable fin 14 pouces",
+   "category": "informatique",
+   "price": 240,
+   "moq": 0,
+   "tagline": "Léger, métal",
+   "description": "Portable fin et léger.",
+   "images": [
+    "https://images.unsplash.com/photo-1778157781167-07e0a5d5c82f"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "ecran-pc-24-pouces-61",
+   "num": "ZG-0061",
+   "name": "Écran PC 24 pouces",
+   "category": "informatique",
+   "price": 72,
+   "moq": 0,
+   "tagline": "Full HD",
+   "description": "Écran bureautique et cybercafés.",
+   "images": [
+    "https://images.unsplash.com/photo-1547658718-1cdaa0852790",
+    "https://images.unsplash.com/photo-1619597455322-4fbbd820250a"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "poste-de-travail-complet-62",
+   "num": "ZG-0062",
+   "name": "Poste de travail complet",
+   "category": "informatique",
+   "price": 260,
+   "moq": 0,
+   "tagline": "Écran, clavier, souris",
+   "description": "Ensemble bureautique prêt à l'emploi.",
+   "images": [
+    "https://images.unsplash.com/photo-1517518295033-d5ab8ca078cc"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "imprimante-multifonction-63",
+   "num": "ZG-0063",
+   "name": "Imprimante multifonction",
+   "category": "informatique",
+   "price": 68,
+   "moq": 0,
+   "tagline": "Imprime, copie, scanne",
+   "description": "Imprimante pour bureaux, écoles et boutiques de services.",
+   "images": [
+    "https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6",
+    "https://images.unsplash.com/photo-1650094980833-7373de26feb6"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "imprimante-grand-format-64",
+   "num": "ZG-0064",
+   "name": "Imprimante grand format",
+   "category": "informatique",
+   "price": 2400,
+   "moq": 0,
+   "tagline": "Bâches et banderoles",
+   "description": "Pour imprimeries et agences de communication.",
+   "images": [
+    "https://images.unsplash.com/photo-1693031630369-bd429a57f115"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "chaise-de-bureau-65",
+   "num": "ZG-0065",
+   "name": "Chaise de bureau",
+   "category": "informatique",
+   "price": 28,
+   "moq": 0,
+   "tagline": "Ergonomique, roulettes",
+   "description": "Chaise de bureau réglable.",
+   "images": [
+    "https://images.unsplash.com/photo-1688578735352-9a6f2ac3b70a",
+    "https://images.unsplash.com/photo-1612372606404-0ab33e7187ee"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "mobilier-de-bureau-66",
+   "num": "ZG-0066",
+   "name": "Mobilier de bureau",
+   "category": "informatique",
+   "price": 95,
+   "moq": 0,
+   "tagline": "Tables et chaises",
+   "description": "Ensemble pour open-space et salles de réunion.",
+   "images": [
+    "https://images.unsplash.com/photo-1594235048794-fae8583a5af5"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "climatiseur-split-12-000-btu-67",
+   "num": "ZG-0067",
+   "name": "Climatiseur split 12 000 BTU",
+   "category": "electromenager",
+   "price": 215,
+   "moq": 0,
+   "tagline": "Inverter, économique",
+   "description": "Climatiseur mural avec télécommande.",
+   "images": [
+    "https://images.unsplash.com/photo-1762341123870-d706f257a12e",
+    "https://images.unsplash.com/photo-1726614846573-c1ac2e6161d1"
+   ],
+   "featured": true,
+   "top": 5,
+   "active": true
+  },
+  {
+   "id": "refrigerateur-americain-68",
+   "num": "ZG-0068",
+   "name": "Réfrigérateur américain",
+   "category": "electromenager",
+   "price": 420,
+   "moq": 0,
+   "tagline": "Grande capacité",
+   "description": "Réfrigérateur double porte.",
+   "images": [
+    "https://images.unsplash.com/photo-1588854337115-1c67d9247e4d"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "refrigerateur-3-portes-69",
+   "num": "ZG-0069",
+   "name": "Réfrigérateur 3 portes",
+   "category": "electromenager",
+   "price": 380,
+   "moq": 0,
+   "tagline": "Inox",
+   "description": "Réfrigérateur-congélateur trois portes.",
+   "images": [
+    "https://images.unsplash.com/photo-1484154218962-a197022b5858"
+   ],
+   "featured": true,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "lave-linge-hublot-7-kg-70",
+   "num": "ZG-0070",
+   "name": "Lave-linge hublot 7 kg",
+   "category": "electromenager",
+   "price": 165,
+   "moq": 0,
+   "tagline": "Programmes multiples",
+   "description": "Lave-linge frontal 7 kg.",
+   "images": [
+    "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1",
+    "https://images.unsplash.com/photo-1604335399105-a0c585fd81a1"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "lave-linge-8-kg-71",
+   "num": "ZG-0071",
+   "name": "Lave-linge 8 kg",
+   "category": "electromenager",
+   "price": 185,
+   "moq": 0,
+   "tagline": "Grande famille",
+   "description": "Lave-linge frontal 8 kg.",
+   "images": [
+    "https://images.unsplash.com/photo-1622473590925-e3616c0a41bf"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "cuisiniere-a-gaz-4-feux-72",
+   "num": "ZG-0072",
+   "name": "Cuisinière à gaz 4 feux",
+   "category": "electromenager",
+   "price": 88,
+   "moq": 0,
+   "tagline": "Avec four",
+   "description": "Cuisinière gaz avec four.",
+   "images": [
+    "https://images.unsplash.com/photo-1623114112815-74a4b9fe505d",
+    "https://images.unsplash.com/photo-1629234358103-5b5ee53ece9c"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "micro-ondes-20-litres-73",
+   "num": "ZG-0073",
+   "name": "Micro-ondes 20 litres",
+   "category": "electromenager",
+   "price": 38,
+   "moq": 0,
+   "tagline": "Compact",
+   "description": "Micro-ondes 20 L.",
+   "images": [
+    "https://images.unsplash.com/photo-1596552183299-000ef779e88d"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "blender-1-5-litre-74",
+   "num": "ZG-0074",
+   "name": "Blender 1,5 litre",
+   "category": "electromenager",
+   "price": 9.8,
+   "moq": 0,
+   "tagline": "Lames inox",
+   "description": "Mixeur pour jus et sauces.",
+   "images": [
+    "https://images.unsplash.com/photo-1570222094114-d054a817e56b",
+    "https://images.unsplash.com/photo-1622818426197-d54f85b88690"
+   ],
+   "featured": false,
+   "top": 11,
+   "active": true
+  },
+  {
+   "id": "bouilloire-inox-75",
+   "num": "ZG-0075",
+   "name": "Bouilloire inox",
+   "category": "electromenager",
+   "price": 4.2,
+   "moq": 0,
+   "tagline": "1,8 litre",
+   "description": "Bouilloire électrique.",
+   "images": [
+    "https://images.unsplash.com/photo-1594213114663-d94db9b17125"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "ventilateur-de-table-76",
+   "num": "ZG-0076",
+   "name": "Ventilateur de table",
+   "category": "electromenager",
+   "price": 8.5,
+   "moq": 0,
+   "tagline": "3 vitesses",
+   "description": "Ventilateur oscillant.",
+   "images": [
+    "https://images.unsplash.com/photo-1565151443833-29bf2ba5dd8d",
+    "https://images.unsplash.com/photo-1568392816241-44d223d4d490"
+   ],
+   "featured": true,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "ventilateur-mural-77",
+   "num": "ZG-0077",
+   "name": "Ventilateur mural",
+   "category": "electromenager",
+   "price": 9.2,
+   "moq": 0,
+   "tagline": "Gain de place",
+   "description": "Ventilateur à fixer au mur.",
+   "images": [
+    "https://images.unsplash.com/photo-1607835498554-2c5519af1730"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "lave-vaisselle-78",
+   "num": "ZG-0078",
+   "name": "Lave-vaisselle",
+   "category": "electromenager",
+   "price": 210,
+   "moq": 0,
+   "tagline": "12 couverts",
+   "description": "Lave-vaisselle pose libre.",
+   "images": [
+    "https://images.unsplash.com/photo-1556185781-a47769abb7ee"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "panneau-solaire-450-w-79",
+   "num": "ZG-0079",
+   "name": "Panneau solaire 450 W",
+   "category": "solaire",
+   "price": 72,
+   "moq": 0,
+   "tagline": "Monocristallin",
+   "description": "Panneau haut rendement pour toitures et installations autonomes.",
+   "images": [
+    "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d",
+    "https://images.unsplash.com/photo-1558449028-b53a39d100fc"
+   ],
+   "featured": true,
+   "top": 8,
+   "active": true
+  },
+  {
+   "id": "panneau-solaire-550-w-80",
+   "num": "ZG-0080",
+   "name": "Panneau solaire 550 W",
+   "category": "solaire",
+   "price": 88,
+   "moq": 0,
+   "tagline": "Haute puissance",
+   "description": "Panneau grand format.",
+   "images": [
+    "https://images.unsplash.com/photo-1613665813446-82a78c468a1d"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "kit-solaire-toiture-complet-81",
+   "num": "ZG-0081",
+   "name": "Kit solaire toiture complet",
+   "category": "solaire",
+   "price": 1450,
+   "moq": 0,
+   "tagline": "Panneaux, onduleur, batteries",
+   "description": "Kit complet pour une maison.",
+   "images": [
+    "https://images.unsplash.com/photo-1658298775754-5839ffd434cc"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "groupe-electrogene-et-onduleurs-82",
+   "num": "ZG-0082",
+   "name": "Groupe électrogène et onduleurs",
+   "category": "solaire",
+   "price": 980,
+   "moq": 0,
+   "tagline": "Secours électrique",
+   "description": "Groupe et onduleurs pour coupures de courant.",
+   "images": [
+    "https://images.unsplash.com/photo-1780445392484-38a4852a1fd8"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "groupe-electrogene-compact-83",
+   "num": "ZG-0083",
+   "name": "Groupe électrogène compact",
+   "category": "solaire",
+   "price": 260,
+   "moq": 0,
+   "tagline": "Essence, cadre robuste",
+   "description": "Groupe portable pour boutiques et maisons.",
+   "images": [
+    "https://images.unsplash.com/photo-1700318092011-6e4666e94ab5",
+    "https://images.unsplash.com/photo-1700318131252-ab19c871ab60"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "batteries-de-stockage-84",
+   "num": "ZG-0084",
+   "name": "Batteries de stockage",
+   "category": "solaire",
+   "price": 115,
+   "moq": 0,
+   "tagline": "Installation solaire",
+   "description": "Batteries pour stocker l'énergie.",
+   "images": [
+    "https://images.unsplash.com/photo-1742899273038-67ff67477663"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "batterie-lithium-et-chargeur-85",
+   "num": "ZG-0085",
+   "name": "Batterie lithium et chargeur",
+   "category": "solaire",
+   "price": 145,
+   "moq": 0,
+   "tagline": "Longue durée",
+   "description": "Batterie lithium avec chargeur.",
+   "images": [
+    "https://images.unsplash.com/photo-1676337167498-ceac1d6dafba"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "station-d-energie-portable-86",
+   "num": "ZG-0086",
+   "name": "Station d'énergie portable",
+   "category": "solaire",
+   "price": 160,
+   "moq": 0,
+   "tagline": "Prises et USB",
+   "description": "Générateur silencieux rechargeable.",
+   "images": [
+    "https://images.unsplash.com/photo-1697665896503-8b1fd6a8ff0f"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "panneau-solaire-300-w-87",
+   "num": "ZG-0087",
+   "name": "Panneau solaire 300 W",
+   "category": "solaire",
+   "price": 48,
+   "moq": 0,
+   "tagline": "Polycristallin",
+   "description": "Panneau économique.",
+   "images": [
+    "https://images.unsplash.com/photo-1724041875334-0a6397111c7e"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "robe-imprime-wax-ample-88",
+   "num": "ZG-0088",
+   "name": "Robe imprimé wax ample",
+   "category": "femmes",
+   "price": 7.5,
+   "moq": 0,
+   "tagline": "Imprimés africains",
+   "description": "Robe mi-longue aux motifs vifs, idéale pour la revente.",
+   "images": [
+    "https://images.unsplash.com/photo-1784160053635-424cf07f567c",
+    "https://images.unsplash.com/photo-1784160053632-6eddd51bda26"
+   ],
+   "featured": true,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "robe-portefeuille-terracotta-89",
+   "num": "ZG-0089",
+   "name": "Robe portefeuille terracotta",
+   "category": "femmes",
+   "price": 6.8,
+   "moq": 0,
+   "tagline": "Ceinture à nouer",
+   "description": "Robe chemise, tailles S à XXL.",
+   "images": [
+    "https://images.unsplash.com/photo-1789110853872-f416085557fa"
+   ],
+   "featured": false,
+   "top": 10,
+   "active": true
+  },
+  {
+   "id": "robe-de-soiree-longue-doree-90",
+   "num": "ZG-0090",
+   "name": "Robe de soirée longue dorée",
+   "category": "femmes",
+   "price": 18,
+   "moq": 0,
+   "tagline": "Cérémonies, mariages",
+   "description": "Robe longue habillée.",
+   "images": [
+    "https://images.unsplash.com/photo-1756483510840-b0dda5f0dd0f",
+    "https://images.unsplash.com/photo-1765229276796-c93c73cc3f3b"
+   ],
+   "featured": true,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "top-col-v-beige-91",
+   "num": "ZG-0091",
+   "name": "Top col V beige",
+   "category": "femmes",
+   "price": 3.2,
+   "moq": 0,
+   "tagline": "Basique",
+   "description": "Top léger à col V.",
+   "images": [
+    "https://images.unsplash.com/photo-1567966456076-905a50a06d8c"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "robe-fleurie-mi-longue-92",
+   "num": "ZG-0092",
+   "name": "Robe fleurie mi-longue",
+   "category": "femmes",
+   "price": 6.2,
+   "moq": 0,
+   "tagline": "Imprimé floral",
+   "description": "Robe d'été évasée.",
+   "images": [
+    "https://images.unsplash.com/photo-1628144029346-8a98676311b6"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "robe-sans-manches-bleue-93",
+   "num": "ZG-0093",
+   "name": "Robe sans manches bleue",
+   "category": "femmes",
+   "price": 5.9,
+   "moq": 0,
+   "tagline": "Quotidien",
+   "description": "Robe confortable, tissu respirant.",
+   "images": [
+    "https://images.unsplash.com/photo-1601653233006-5c9fd30eab12"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "ensemble-pagne-et-chapeau-94",
+   "num": "ZG-0094",
+   "name": "Ensemble pagne et chapeau",
+   "category": "femmes",
+   "price": 9.5,
+   "moq": 0,
+   "tagline": "Tenue assortie",
+   "description": "Robe et chapeau coordonnés.",
+   "images": [
+    "https://images.unsplash.com/photo-1696962678565-bee84e6b9cb6",
+    "https://images.unsplash.com/photo-1696962701419-6f510910e838"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "robe-coloree-decontractee-95",
+   "num": "ZG-0095",
+   "name": "Robe colorée décontractée",
+   "category": "femmes",
+   "price": 5.4,
+   "moq": 0,
+   "tagline": "Coupe ample",
+   "description": "Robe aux couleurs franches.",
+   "images": [
+    "https://images.unsplash.com/photo-1709809081557-78f803ce93a0"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "robes-de-ceremonie-satin-96",
+   "num": "ZG-0096",
+   "name": "Robes de cérémonie satin",
+   "category": "femmes",
+   "price": 14.5,
+   "moq": 0,
+   "tagline": "Rouge et rose",
+   "description": "Robes en satin par tailles et couleurs.",
+   "images": [
+    "https://images.unsplash.com/photo-1785686563045-9825f2f8ebc8"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "manteau-leger-et-robe-imprimee-97",
+   "num": "ZG-0097",
+   "name": "Manteau léger et robe imprimée",
+   "category": "femmes",
+   "price": 12,
+   "moq": 0,
+   "tagline": "Look urbain",
+   "description": "Tenue complète prête à vendre.",
+   "images": [
+    "https://images.unsplash.com/photo-1787779351084-5cf715888d06"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "assortiment-pret-a-porter-femme-98",
+   "num": "ZG-0098",
+   "name": "Assortiment prêt-à-porter femme",
+   "category": "femmes",
+   "price": 3.5,
+   "moq": 0,
+   "tagline": "Ballot varié",
+   "description": "Hauts, robes et jupes de saison.",
+   "images": [
+    "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "t-shirt-coton-col-rond-99",
+   "num": "ZG-0099",
+   "name": "T-shirt coton col rond",
+   "category": "hommes",
+   "price": 1.8,
+   "moq": 0,
+   "tagline": "Impression possible",
+   "description": "T-shirt basique en coton pour revente, campagnes et impression.",
+   "images": [
+    "https://images.unsplash.com/photo-1523381294911-8d3cead13475",
+    "https://images.unsplash.com/photo-1576871337622-98d48d1cf531"
+   ],
+   "featured": true,
+   "top": 12,
+   "active": true
+  },
+  {
+   "id": "chemise-oxford-bleue-100",
+   "num": "ZG-0100",
+   "name": "Chemise oxford bleue",
+   "category": "hommes",
+   "price": 4.2,
+   "moq": 0,
+   "tagline": "Coupe ajustée",
+   "description": "Chemise manches longues, M à 3XL.",
+   "images": [
+    "https://images.unsplash.com/photo-1602810316693-3667c854239a",
+    "https://images.unsplash.com/photo-1740711152088-88a009e877bb"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "chemise-blanche-col-classique-101",
+   "num": "ZG-0101",
+   "name": "Chemise blanche col classique",
+   "category": "hommes",
+   "price": 3.9,
+   "moq": 0,
+   "tagline": "Bureau, uniforme",
+   "description": "Chemise blanche unie.",
+   "images": [
+    "https://images.unsplash.com/photo-1603252109303-2751441dd157"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "polo-pique-102",
+   "num": "ZG-0102",
+   "name": "Polo piqué",
+   "category": "hommes",
+   "price": 3.6,
+   "moq": 0,
+   "tagline": "Logo brodé possible",
+   "description": "Polo pour entreprises et équipes.",
+   "images": [
+    "https://images.unsplash.com/photo-1623658580851-3b25bf83b4ea"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "costume-deux-pieces-bleu-103",
+   "num": "ZG-0103",
+   "name": "Costume deux pièces bleu",
+   "category": "hommes",
+   "price": 32,
+   "moq": 0,
+   "tagline": "Coupe slim",
+   "description": "Veste et pantalon, 46 à 58.",
+   "images": [
+    "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f",
+    "https://images.unsplash.com/photo-1593030103066-0093718efeb9"
+   ],
+   "featured": true,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "costume-noir-slim-104",
+   "num": "ZG-0104",
+   "name": "Costume noir slim",
+   "category": "hommes",
+   "price": 29,
+   "moq": 0,
+   "tagline": "Cérémonie",
+   "description": "Costume noir ajusté.",
+   "images": [
+    "https://images.unsplash.com/photo-1617113930975-f9c7243ae527",
+    "https://images.unsplash.com/photo-1618886614638-80e3c103d31a"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "vestes-de-costume-colorees-105",
+   "num": "ZG-0105",
+   "name": "Vestes de costume colorées",
+   "category": "hommes",
+   "price": 19,
+   "moq": 0,
+   "tagline": "Assortiment",
+   "description": "Vestes seules en plusieurs couleurs.",
+   "images": [
+    "https://images.unsplash.com/photo-1549037173-e3b717902c57"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "jean-denim-homme-106",
+   "num": "ZG-0106",
+   "name": "Jean denim homme",
+   "category": "hommes",
+   "price": 6.5,
+   "moq": 0,
+   "tagline": "Coupe droite",
+   "description": "Jean résistant, 28 à 40.",
+   "images": [
+    "https://images.unsplash.com/photo-1542272604-787c3835535d",
+    "https://images.unsplash.com/photo-1602293589930-45aad59ba3ab"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "lot-de-jeans-107",
+   "num": "ZG-0107",
+   "name": "Lot de jeans",
+   "category": "hommes",
+   "price": 4.8,
+   "moq": 0,
+   "tagline": "Tailles mélangées",
+   "description": "Jeans au lot, meilleur prix.",
+   "images": [
+    "https://images.unsplash.com/photo-1565084888279-aca607ecce0c",
+    "https://images.unsplash.com/photo-1637069585336-827b298fe84a"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "chemise-a-carreaux-108",
+   "num": "ZG-0108",
+   "name": "Chemise à carreaux",
+   "category": "hommes",
+   "price": 4,
+   "moq": 0,
+   "tagline": "Flanelle légère",
+   "description": "Chemise décontractée.",
+   "images": [
+    "https://images.unsplash.com/photo-1642764873649-5c228ce3fe74"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "vetements-bebe-assortis-109",
+   "num": "ZG-0109",
+   "name": "Vêtements bébé assortis",
+   "category": "enfants",
+   "price": 2.4,
+   "moq": 0,
+   "tagline": "Layette variée",
+   "description": "Pyjamas, bodies et ensembles, 0 à 2 ans.",
+   "images": [
+    "https://images.unsplash.com/photo-1766918780914-5df4a5a98c44",
+    "https://images.unsplash.com/photo-1766918780914-e19d9de76d85"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "body-bebe-coton-110",
+   "num": "ZG-0110",
+   "name": "Body bébé coton",
+   "category": "enfants",
+   "price": 1.2,
+   "moq": 0,
+   "tagline": "0 à 24 mois",
+   "description": "Body en coton doux.",
+   "images": [
+    "https://images.unsplash.com/photo-1622290319146-7b63df48a635"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "panier-naissance-layette-111",
+   "num": "ZG-0111",
+   "name": "Panier naissance layette",
+   "category": "enfants",
+   "price": 2.1,
+   "moq": 0,
+   "tagline": "Coffret cadeau",
+   "description": "Kit de layette prêt à offrir.",
+   "images": [
+    "https://images.unsplash.com/photo-1768693602418-260d828b878d"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "ensemble-garcon-gilet-et-cravate-112",
+   "num": "ZG-0112",
+   "name": "Ensemble garçon gilet et cravate",
+   "category": "enfants",
+   "price": 8.5,
+   "moq": 0,
+   "tagline": "Cérémonies",
+   "description": "Chemise, gilet, pantalon, cravate.",
+   "images": [
+    "https://images.unsplash.com/photo-1725147874938-7904e3362841",
+    "https://images.unsplash.com/photo-1725147874578-fc76e0d865e1"
+   ],
+   "featured": true,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "robes-fillette-colorees-113",
+   "num": "ZG-0113",
+   "name": "Robes fillette colorées",
+   "category": "enfants",
+   "price": 3.8,
+   "moq": 0,
+   "tagline": "2 à 10 ans",
+   "description": "Robes aux couleurs vives.",
+   "images": [
+    "https://images.unsplash.com/photo-1758798460539-781b0bb466e6"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "robe-fillette-grise-114",
+   "num": "ZG-0114",
+   "name": "Robe fillette grise",
+   "category": "enfants",
+   "price": 3.5,
+   "moq": 0,
+   "tagline": "Coupe évasée",
+   "description": "Robe simple et élégante.",
+   "images": [
+    "https://images.unsplash.com/photo-1556133168-a6cb2412e0c7"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "ensemble-t-shirt-et-short-fille-115",
+   "num": "ZG-0115",
+   "name": "Ensemble t-shirt et short fille",
+   "category": "enfants",
+   "price": 2.9,
+   "moq": 0,
+   "tagline": "Tenue d'été",
+   "description": "Ensemble en coton.",
+   "images": [
+    "https://images.unsplash.com/photo-1604482858862-1db908a653e4"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "chemise-a-carreaux-garcon-116",
+   "num": "ZG-0116",
+   "name": "Chemise à carreaux garçon",
+   "category": "enfants",
+   "price": 3.1,
+   "moq": 0,
+   "tagline": "3 à 14 ans",
+   "description": "Pour l'école et les sorties.",
+   "images": [
+    "https://images.unsplash.com/photo-1604303768345-038b79a8c47a"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "baskets-running-blanc-et-orange-117",
+   "num": "ZG-0117",
+   "name": "Baskets running blanc et orange",
+   "category": "chaussures",
+   "price": 9.5,
+   "moq": 0,
+   "tagline": "Pointures 36 à 45",
+   "description": "Baskets respirantes, cartons assortis.",
+   "images": [
+    "https://images.unsplash.com/photo-1560769629-975ec94e6a86"
+   ],
+   "featured": true,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "baskets-pastel-118",
+   "num": "ZG-0118",
+   "name": "Baskets pastel",
+   "category": "chaussures",
+   "price": 8.2,
+   "moq": 0,
+   "tagline": "Tendance",
+   "description": "Baskets mode coloris pastel.",
+   "images": [
+    "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "baskets-cuir-blanches-119",
+   "num": "ZG-0119",
+   "name": "Baskets cuir blanches",
+   "category": "chaussures",
+   "price": 10.5,
+   "moq": 0,
+   "tagline": "Perforées",
+   "description": "Baskets blanches, 38 à 46.",
+   "images": [
+    "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
+    "https://images.unsplash.com/photo-1600269452121-4f2416e55c28"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "chaussures-habillees-cuir-120",
+   "num": "ZG-0120",
+   "name": "Chaussures habillées cuir",
+   "category": "chaussures",
+   "price": 12,
+   "moq": 0,
+   "tagline": "Derby à lacets",
+   "description": "Chaussures de ville en cuir.",
+   "images": [
+    "https://images.unsplash.com/photo-1603191659812-ee978eeeef76"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "chaussures-en-toile-121",
+   "num": "ZG-0121",
+   "name": "Chaussures en toile",
+   "category": "chaussures",
+   "price": 4.5,
+   "moq": 0,
+   "tagline": "Légères",
+   "description": "Basiques pour la revente en volume.",
+   "images": [
+    "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "sandales-a-talons-cuir-122",
+   "num": "ZG-0122",
+   "name": "Sandales à talons cuir",
+   "category": "chaussures",
+   "price": 7.8,
+   "moq": 0,
+   "tagline": "Talon moyen",
+   "description": "Sandales femme, 36 à 41.",
+   "images": [
+    "https://images.unsplash.com/photo-1630386474440-8f2e6d752a98",
+    "https://images.unsplash.com/photo-1553545985-1e0d8781d5db"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "sandales-plates-fleuries-123",
+   "num": "ZG-0123",
+   "name": "Sandales plates fleuries",
+   "category": "chaussures",
+   "price": 3.4,
+   "moq": 0,
+   "tagline": "Confort d'été",
+   "description": "Semelle souple.",
+   "images": [
+    "https://images.unsplash.com/photo-1619510331283-a46c425e48bb"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "sandales-cuir-homme-124",
+   "num": "ZG-0124",
+   "name": "Sandales cuir homme",
+   "category": "chaussures",
+   "price": 5.2,
+   "moq": 0,
+   "tagline": "Robustes",
+   "description": "Semelle antidérapante.",
+   "images": [
+    "https://images.unsplash.com/photo-1613662632164-7f2b081a5b46"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "escarpins-assortis-125",
+   "num": "ZG-0125",
+   "name": "Escarpins assortis",
+   "category": "chaussures",
+   "price": 6.9,
+   "moq": 0,
+   "tagline": "Lot de coloris",
+   "description": "Escarpins et ballerines assortis.",
+   "images": [
+    "https://images.unsplash.com/photo-1519415943484-9fa1873496d4"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "baskets-streetwear-126",
+   "num": "ZG-0126",
+   "name": "Baskets streetwear",
+   "category": "chaussures",
+   "price": 9.8,
+   "moq": 0,
+   "tagline": "Montantes",
+   "description": "Style urbain très recherché.",
+   "images": [
+    "https://images.unsplash.com/photo-1595341888016-a392ef81b7de"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "sac-a-main-cuir-marron-127",
+   "num": "ZG-0127",
+   "name": "Sac à main cuir marron",
+   "category": "sacs",
+   "price": 11,
+   "moq": 0,
+   "tagline": "Grand format",
+   "description": "Simili-cuir de qualité.",
+   "images": [
+    "https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6",
+    "https://images.unsplash.com/photo-1590874103328-eac38a683ce7"
+   ],
+   "featured": true,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "sac-a-main-rouge-128",
+   "num": "ZG-0128",
+   "name": "Sac à main rouge",
+   "category": "sacs",
+   "price": 10.5,
+   "moq": 0,
+   "tagline": "Fermoir élégant",
+   "description": "Bandoulière amovible.",
+   "images": [
+    "https://images.unsplash.com/photo-1584917865442-de89df76afd3"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "sac-noir-a-anse-129",
+   "num": "ZG-0129",
+   "name": "Sac noir à anse",
+   "category": "sacs",
+   "price": 12.5,
+   "moq": 0,
+   "tagline": "Finitions argentées",
+   "description": "Sac noir intemporel.",
+   "images": [
+    "https://images.unsplash.com/photo-1614179689702-355944cd0918"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "sacoche-bandouliere-130",
+   "num": "ZG-0130",
+   "name": "Sacoche bandoulière",
+   "category": "sacs",
+   "price": 7.2,
+   "moq": 0,
+   "tagline": "Compacte, mixte",
+   "description": "Pour téléphone et papiers.",
+   "images": [
+    "https://images.unsplash.com/photo-1600857062241-98e5dba7f214"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "cartable-gris-a-boucles-131",
+   "num": "ZG-0131",
+   "name": "Cartable gris à boucles",
+   "category": "sacs",
+   "price": 13,
+   "moq": 0,
+   "tagline": "Structuré",
+   "description": "Sac élégant à boucles dorées.",
+   "images": [
+    "https://images.unsplash.com/photo-1605733513597-a8f8341084e6"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "sac-a-dos-noir-132",
+   "num": "ZG-0132",
+   "name": "Sac à dos noir",
+   "category": "sacs",
+   "price": 6.4,
+   "moq": 0,
+   "tagline": "Poche ordinateur",
+   "description": "Personnalisable avec logo.",
+   "images": [
+    "https://images.unsplash.com/photo-1553062407-98eeb64c6a62"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "sac-a-dos-cuir-marron-133",
+   "num": "ZG-0133",
+   "name": "Sac à dos cuir marron",
+   "category": "sacs",
+   "price": 9.8,
+   "moq": 0,
+   "tagline": "Style urbain",
+   "description": "Plusieurs coloris.",
+   "images": [
+    "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3",
+    "https://images.unsplash.com/photo-1622560480654-d96214fdc887"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "sac-a-dos-randonnee-134",
+   "num": "ZG-0134",
+   "name": "Sac à dos randonnée",
+   "category": "sacs",
+   "price": 8.6,
+   "moq": 0,
+   "tagline": "Grande contenance",
+   "description": "Multi-poches.",
+   "images": [
+    "https://images.unsplash.com/photo-1509762774605-f07235a08f1f"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "sacs-shopping-colores-135",
+   "num": "ZG-0135",
+   "name": "Sacs shopping colorés",
+   "category": "sacs",
+   "price": 0.35,
+   "moq": 0,
+   "tagline": "Votre logo imprimé",
+   "description": "Sacs cabas pour boutiques.",
+   "images": [
+    "https://images.unsplash.com/photo-1760565030346-4b947220fe3a",
+    "https://images.unsplash.com/photo-1760565030243-c92ed557e8da"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "parure-collier-et-boucles-136",
+   "num": "ZG-0136",
+   "name": "Parure collier et boucles",
+   "category": "bijoux",
+   "price": 3.8,
+   "moq": 0,
+   "tagline": "Plaqué or",
+   "description": "Parures pour boutiques et cérémonies.",
+   "images": [
+    "https://images.unsplash.com/photo-1742627032795-1dfb552448ce",
+    "https://images.unsplash.com/photo-1727947074642-0bd47ef70b58"
+   ],
+   "featured": true,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "collier-perles-dorees-137",
+   "num": "ZG-0137",
+   "name": "Collier perles dorées",
+   "category": "bijoux",
+   "price": 2.4,
+   "moq": 0,
+   "tagline": "Fait main",
+   "description": "Collier de perles, couleurs au choix.",
+   "images": [
+    "https://images.unsplash.com/photo-1600862754152-80a263dd564f"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "collier-perles-or-et-argent-138",
+   "num": "ZG-0138",
+   "name": "Collier perles or et argent",
+   "category": "bijoux",
+   "price": 2.2,
+   "moq": 0,
+   "tagline": "Assortiment",
+   "description": "Colliers fantaisie.",
+   "images": [
+    "https://images.unsplash.com/photo-1601121141499-17ae80afc03a"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "bijoux-fantaisie-assortis-139",
+   "num": "ZG-0139",
+   "name": "Bijoux fantaisie assortis",
+   "category": "bijoux",
+   "price": 1.6,
+   "moq": 0,
+   "tagline": "Lot vitrine",
+   "description": "Bagues, bracelets et pendentifs.",
+   "images": [
+    "https://images.unsplash.com/photo-1641290748359-1d944fc8359a"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "montre-analogique-classique-140",
+   "num": "ZG-0140",
+   "name": "Montre analogique classique",
+   "category": "bijoux",
+   "price": 5.5,
+   "moq": 0,
+   "tagline": "Cuir ou métal",
+   "description": "Montre à quartz, marquage possible.",
+   "images": [
+    "https://images.unsplash.com/photo-1588866681220-a46150c5eb23",
+    "https://images.unsplash.com/photo-1651321225522-230f69f6561f"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "lunettes-de-soleil-141",
+   "num": "ZG-0141",
+   "name": "Lunettes de soleil",
+   "category": "bijoux",
+   "price": 1.4,
+   "moq": 0,
+   "tagline": "Protection UV",
+   "description": "Modèles assortis avec étui.",
+   "images": [
+    "https://images.unsplash.com/photo-1625480860390-16e060eac591"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "pagnes-wax-imprimes-142",
+   "num": "ZG-0142",
+   "name": "Pagnes wax imprimés",
+   "category": "textile",
+   "price": 4.5,
+   "moq": 0,
+   "tagline": "Pièce de 6 yards",
+   "description": "Tissu wax aux motifs vifs, vendu à la pièce.",
+   "images": [
+    "https://images.unsplash.com/photo-1784123476742-de48239d2fb0",
+    "https://images.unsplash.com/photo-1768212565424-efa3a3852b81"
+   ],
+   "featured": true,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "tissus-africains-assortis-143",
+   "num": "ZG-0143",
+   "name": "Tissus africains assortis",
+   "category": "textile",
+   "price": 3.9,
+   "moq": 0,
+   "tagline": "Lot de motifs",
+   "description": "Assortiment de tissus imprimés.",
+   "images": [
+    "https://images.unsplash.com/photo-1768212565426-58b089b6386d",
+    "https://images.unsplash.com/photo-1768212566108-4ce4f329e4d2"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "coupons-de-tissu-colores-144",
+   "num": "ZG-0144",
+   "name": "Coupons de tissu colorés",
+   "category": "textile",
+   "price": 2.6,
+   "moq": 0,
+   "tagline": "Couture et confection",
+   "description": "Tissus unis en coupons.",
+   "images": [
+    "https://images.unsplash.com/photo-1705248383815-c6bc07898592",
+    "https://images.unsplash.com/photo-1640767760729-7bfb6ce43ad4"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "tissu-raye-145",
+   "num": "ZG-0145",
+   "name": "Tissu rayé",
+   "category": "textile",
+   "price": 2.8,
+   "moq": 0,
+   "tagline": "Rouleaux",
+   "description": "Tissu rayé au mètre.",
+   "images": [
+    "https://images.unsplash.com/photo-1624516268152-1e48624026ed"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "bobines-de-fil-a-coudre-146",
+   "num": "ZG-0146",
+   "name": "Bobines de fil à coudre",
+   "category": "textile",
+   "price": 0.25,
+   "moq": 0,
+   "tagline": "Toutes couleurs",
+   "description": "Fil pour ateliers de couture.",
+   "images": [
+    "https://images.unsplash.com/photo-1517146783983-418c681b56c5",
+    "https://images.unsplash.com/photo-1542044801-30d3e45ae49a"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "draps-plies-en-lot-147",
+   "num": "ZG-0147",
+   "name": "Draps pliés en lot",
+   "category": "textile",
+   "price": 3.2,
+   "moq": 0,
+   "tagline": "Coton",
+   "description": "Draps et étoffes pliés.",
+   "images": [
+    "https://images.unsplash.com/photo-1705248382836-3618e25706d0"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "perruques-couleurs-148",
+   "num": "ZG-0148",
+   "name": "Perruques couleurs",
+   "category": "beaute",
+   "price": 14,
+   "moq": 0,
+   "tagline": "Fibre, plusieurs longueurs",
+   "description": "Perruques colorées.",
+   "images": [
+    "https://images.unsplash.com/photo-1787220674717-5f44f30d1ae1",
+    "https://images.unsplash.com/photo-1754327748419-715068469357"
+   ],
+   "featured": true,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "perruque-longue-noire-lisse-149",
+   "num": "ZG-0149",
+   "name": "Perruque longue noire lisse",
+   "category": "beaute",
+   "price": 18,
+   "moq": 0,
+   "tagline": "Effet naturel",
+   "description": "Lace frontale selon modèle.",
+   "images": [
+    "https://images.unsplash.com/photo-1745975980824-bc88bd400c78"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "extensions-de-cheveux-150",
+   "num": "ZG-0150",
+   "name": "Extensions de cheveux",
+   "category": "beaute",
+   "price": 8.5,
+   "moq": 0,
+   "tagline": "Toutes textures",
+   "description": "Extensions et mèches.",
+   "images": [
+    "https://images.unsplash.com/photo-1782364743035-5666762e249a"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "meches-naturelles-151",
+   "num": "ZG-0151",
+   "name": "Mèches naturelles",
+   "category": "beaute",
+   "price": 11,
+   "moq": 0,
+   "tagline": "Brun et noir",
+   "description": "Mèches vendues par paquets.",
+   "images": [
+    "https://images.unsplash.com/photo-1618566909269-a09202832ac6"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "coffret-soins-visage-152",
+   "num": "ZG-0152",
+   "name": "Coffret soins visage",
+   "category": "beaute",
+   "price": 4.8,
+   "moq": 0,
+   "tagline": "Idée cadeau",
+   "description": "Sérums et rouleau de massage.",
+   "images": [
+    "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "assortiment-maquillage-153",
+   "num": "ZG-0153",
+   "name": "Assortiment maquillage",
+   "category": "beaute",
+   "price": 3.6,
+   "moq": 0,
+   "tagline": "Pour instituts",
+   "description": "Rouges à lèvres et palettes.",
+   "images": [
+    "https://images.unsplash.com/photo-1631730486572-226d1f595b68"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "pots-cosmetiques-vides-154",
+   "num": "ZG-0154",
+   "name": "Pots cosmétiques vides",
+   "category": "beaute",
+   "price": 0.6,
+   "moq": 0,
+   "tagline": "Pour vos crèmes",
+   "description": "Pour fabricants locaux.",
+   "images": [
+    "https://images.unsplash.com/photo-1567721913486-6585f069b332"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "parfum-flacon-dore-155",
+   "num": "ZG-0155",
+   "name": "Parfum flacon doré",
+   "category": "beaute",
+   "price": 3.9,
+   "moq": 0,
+   "tagline": "Senteurs au choix",
+   "description": "Parfums en flacon décoratif.",
+   "images": [
+    "https://images.unsplash.com/photo-1600634999623-864991678406"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "batterie-de-cuisine-inox-156",
+   "num": "ZG-0156",
+   "name": "Batterie de cuisine inox",
+   "category": "maison",
+   "price": 18.5,
+   "moq": 0,
+   "tagline": "Avec couvercles",
+   "description": "Compatible tous feux.",
+   "images": [
+    "https://images.unsplash.com/photo-1584990347193-6bebebfeaeee",
+    "https://images.unsplash.com/photo-1604414499020-f9ac575bc5ec"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "marmites-inox-157",
+   "num": "ZG-0157",
+   "name": "Marmites inox",
+   "category": "maison",
+   "price": 14,
+   "moq": 0,
+   "tagline": "Plusieurs tailles",
+   "description": "Pour familles et restaurants.",
+   "images": [
+    "https://images.unsplash.com/photo-1588279102658-4230e1c4fb1e"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "poeles-antiadhesives-lot-de-3-158",
+   "num": "ZG-0158",
+   "name": "Poêles antiadhésives (lot de 3)",
+   "category": "maison",
+   "price": 7.6,
+   "moq": 0,
+   "tagline": "20, 24 et 28 cm",
+   "description": "Manches ergonomiques.",
+   "images": [
+    "https://images.unsplash.com/photo-1547822050-fbb922ea9438"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "batterie-de-cuisine-emaillee-159",
+   "num": "ZG-0159",
+   "name": "Batterie de cuisine émaillée",
+   "category": "maison",
+   "price": 22,
+   "moq": 0,
+   "tagline": "Coloris orange",
+   "description": "Casseroles émaillées.",
+   "images": [
+    "https://images.unsplash.com/photo-1556911164-1297abe8527c"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "cocotte-en-fonte-160",
+   "num": "ZG-0160",
+   "name": "Cocotte en fonte",
+   "category": "maison",
+   "price": 9.4,
+   "moq": 0,
+   "tagline": "Mijotés",
+   "description": "Garde la chaleur longtemps.",
+   "images": [
+    "https://images.unsplash.com/photo-1588279102819-f4520e40b1c6"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "boites-alimentaires-161",
+   "num": "ZG-0161",
+   "name": "Boîtes alimentaires",
+   "category": "maison",
+   "price": 0.8,
+   "moq": 0,
+   "tagline": "Hermétiques",
+   "description": "Plusieurs tailles.",
+   "images": [
+    "https://images.unsplash.com/photo-1595440431225-1c25fd023f71"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "pichet-en-verre-162",
+   "num": "ZG-0162",
+   "name": "Pichet en verre",
+   "category": "maison",
+   "price": 1.3,
+   "moq": 0,
+   "tagline": "1,5 litre",
+   "description": "Pour jus et boissons.",
+   "images": [
+    "https://images.unsplash.com/photo-1585237672814-8f85a8118bf6"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "parure-de-lit-163",
+   "num": "ZG-0163",
+   "name": "Parure de lit",
+   "category": "maison",
+   "price": 9.5,
+   "moq": 0,
+   "tagline": "Housse et taies",
+   "description": "Linge de lit en plusieurs tailles.",
+   "images": [
+    "https://images.unsplash.com/photo-1505692952047-1a78307da8f2"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "canape-tissu-vert-3-places-164",
+   "num": "ZG-0164",
+   "name": "Canapé tissu vert 3 places",
+   "category": "meubles",
+   "price": 165,
+   "moq": 0,
+   "tagline": "Assise confortable",
+   "description": "Canapé moderne, plusieurs coloris.",
+   "images": [
+    "https://images.unsplash.com/photo-1555041469-a586c61ea9bc"
+   ],
+   "featured": true,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "canape-gris-4-coussins-165",
+   "num": "ZG-0165",
+   "name": "Canapé gris 4 coussins",
+   "category": "meubles",
+   "price": 180,
+   "moq": 0,
+   "tagline": "Grand format",
+   "description": "Canapé pour salons et hôtels.",
+   "images": [
+    "https://images.unsplash.com/photo-1698936061086-2bf99c7b9fc5"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "canape-cuir-2-places-166",
+   "num": "ZG-0166",
+   "name": "Canapé cuir 2 places",
+   "category": "meubles",
+   "price": 210,
+   "moq": 0,
+   "tagline": "Simili-cuir",
+   "description": "Canapé compact facile d'entretien.",
+   "images": [
+    "https://images.unsplash.com/photo-1512212621149-107ffe572d2f"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "fauteuil-gris-167",
+   "num": "ZG-0167",
+   "name": "Fauteuil gris",
+   "category": "meubles",
+   "price": 75,
+   "moq": 0,
+   "tagline": "Salon et chambre",
+   "description": "Fauteuil rembourré.",
+   "images": [
+    "https://images.unsplash.com/photo-1623353283172-2518d7e6f5ab"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "lit-double-avec-tete-de-lit-168",
+   "num": "ZG-0168",
+   "name": "Lit double avec tête de lit",
+   "category": "meubles",
+   "price": 145,
+   "moq": 0,
+   "tagline": "160 x 200",
+   "description": "Lit livré en kit.",
+   "images": [
+    "https://images.unsplash.com/photo-1560185128-e173042f79dd",
+    "https://images.unsplash.com/photo-1635594202056-9ea3b497e5c0"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "ensemble-table-et-6-chaises-169",
+   "num": "ZG-0169",
+   "name": "Ensemble table et 6 chaises",
+   "category": "meubles",
+   "price": 230,
+   "moq": 0,
+   "tagline": "Salle à manger",
+   "description": "Table et chaises rembourrées.",
+   "images": [
+    "https://images.unsplash.com/photo-1758977403341-0104135995af",
+    "https://images.unsplash.com/photo-1547062200-f195b1c77e30"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "table-bois-et-chaises-170",
+   "num": "ZG-0170",
+   "name": "Table bois et chaises",
+   "category": "meubles",
+   "price": 160,
+   "moq": 0,
+   "tagline": "Bois massif",
+   "description": "Ensemble pour maisons et restaurants.",
+   "images": [
+    "https://images.unsplash.com/photo-1581970696275-253e75ecf269"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "chambre-complete-171",
+   "num": "ZG-0171",
+   "name": "Chambre complète",
+   "category": "meubles",
+   "price": 520,
+   "moq": 0,
+   "tagline": "Lit, armoire, chevets",
+   "description": "Mobilier de chambre assorti.",
+   "images": [
+    "https://images.unsplash.com/photo-1680503146476-abb8c752e1f4"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "carrelage-sol-et-mur-172",
+   "num": "ZG-0172",
+   "name": "Carrelage sol et mur",
+   "category": "construction",
+   "price": 4.2,
+   "moq": 0,
+   "tagline": "Prix au m²",
+   "description": "Carrelage céramique, nombreux formats et finitions.",
+   "images": [
+    "https://images.unsplash.com/photo-1580398562556-d33329a0f29b",
+    "https://images.unsplash.com/photo-1600328604921-300918f36018"
+   ],
+   "featured": true,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "carreaux-decoratifs-173",
+   "num": "ZG-0173",
+   "name": "Carreaux décoratifs",
+   "category": "construction",
+   "price": 6.5,
+   "moq": 0,
+   "tagline": "Prix au m²",
+   "description": "Carreaux à motifs pour cuisines et salles de bain.",
+   "images": [
+    "https://images.unsplash.com/photo-1784552281617-17124a80c9d1",
+    "https://images.unsplash.com/photo-1771843471340-7387d7d903ce"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "mosaique-bleue-174",
+   "num": "ZG-0174",
+   "name": "Mosaïque bleue",
+   "category": "construction",
+   "price": 7.8,
+   "moq": 0,
+   "tagline": "Piscines, salles d'eau",
+   "description": "Mosaïque en plaques.",
+   "images": [
+    "https://images.unsplash.com/photo-1782765251734-d9996623016e"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "robinet-mitigeur-inox-175",
+   "num": "ZG-0175",
+   "name": "Robinet mitigeur inox",
+   "category": "construction",
+   "price": 6.5,
+   "moq": 0,
+   "tagline": "Cuisine et salle de bain",
+   "description": "Mitigeur en inox.",
+   "images": [
+    "https://images.unsplash.com/photo-1542855368-ca6ea825bca2",
+    "https://images.unsplash.com/photo-1613849925387-6e7f31f0cf40"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "lavabo-avec-meuble-176",
+   "num": "ZG-0176",
+   "name": "Lavabo avec meuble",
+   "category": "construction",
+   "price": 58,
+   "moq": 0,
+   "tagline": "Miroir inclus",
+   "description": "Ensemble salle de bain.",
+   "images": [
+    "https://images.unsplash.com/photo-1635286771551-9d7241ce7811",
+    "https://images.unsplash.com/photo-1646592491934-70310e515618"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "robinetterie-doree-177",
+   "num": "ZG-0177",
+   "name": "Robinetterie dorée",
+   "category": "construction",
+   "price": 14,
+   "moq": 0,
+   "tagline": "Finition or",
+   "description": "Robinetterie haut de gamme.",
+   "images": [
+    "https://images.unsplash.com/photo-1638815401319-702d3b5dfd2a"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "peinture-en-pots-178",
+   "num": "ZG-0178",
+   "name": "Peinture en pots",
+   "category": "construction",
+   "price": 12,
+   "moq": 0,
+   "tagline": "Intérieur et extérieur",
+   "description": "Peintures en pots de 20 L.",
+   "images": [
+    "https://images.unsplash.com/photo-1643822308521-1da534425d82",
+    "https://images.unsplash.com/photo-1652829069807-95a2f6d1a601"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "rouleaux-de-peinture-179",
+   "num": "ZG-0179",
+   "name": "Rouleaux de peinture",
+   "category": "construction",
+   "price": 0.9,
+   "moq": 0,
+   "tagline": "Lot multicolore",
+   "description": "Rouleaux pour peintres et quincailleries.",
+   "images": [
+    "https://images.unsplash.com/photo-1525909002-1b05e0c869d8"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "cable-electrique-en-rouleau-180",
+   "num": "ZG-0180",
+   "name": "Câble électrique en rouleau",
+   "category": "electricite",
+   "price": 18,
+   "moq": 0,
+   "tagline": "100 m",
+   "description": "Câble cuivre, plusieurs sections.",
+   "images": [
+    "https://images.unsplash.com/photo-1518181835702-6eef8b4b2113"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "fils-electriques-couleurs-181",
+   "num": "ZG-0181",
+   "name": "Fils électriques couleurs",
+   "category": "electricite",
+   "price": 9,
+   "moq": 0,
+   "tagline": "Rouleaux assortis",
+   "description": "Fils pour installations domestiques.",
+   "images": [
+    "https://images.unsplash.com/photo-1761507320645-b11a00bfcc34",
+    "https://images.unsplash.com/photo-1761507321319-2d59343016f6"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "ampoules-led-182",
+   "num": "ZG-0182",
+   "name": "Ampoules LED",
+   "category": "electricite",
+   "price": 0.38,
+   "moq": 0,
+   "tagline": "Économie d'énergie",
+   "description": "Ampoules culot standard.",
+   "images": [
+    "https://images.unsplash.com/photo-1532007271951-c487760934ae",
+    "https://images.unsplash.com/photo-1674659719067-8735479ba10c"
+   ],
+   "featured": true,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "suspension-luminaire-183",
+   "num": "ZG-0183",
+   "name": "Suspension luminaire",
+   "category": "electricite",
+   "price": 6.5,
+   "moq": 0,
+   "tagline": "Décoration",
+   "description": "Lampe suspendue moderne.",
+   "images": [
+    "https://images.unsplash.com/photo-1552529232-9e6cb081de19"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "tableau-electrique-et-disjoncteurs-184",
+   "num": "ZG-0184",
+   "name": "Tableau électrique et disjoncteurs",
+   "category": "electricite",
+   "price": 24,
+   "moq": 0,
+   "tagline": "Coffret complet",
+   "description": "Protection d'installation électrique.",
+   "images": [
+    "https://images.unsplash.com/photo-1544724569-5f546fd6f2b5"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "cables-gaines-noirs-185",
+   "num": "ZG-0185",
+   "name": "Câbles gainés noirs",
+   "category": "electricite",
+   "price": 14,
+   "moq": 0,
+   "tagline": "Extérieur",
+   "description": "Câbles renforcés.",
+   "images": [
+    "https://images.unsplash.com/photo-1687038520579-8d8f24721267"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "perceuse-visseuse-sans-fil-186",
+   "num": "ZG-0186",
+   "name": "Perceuse visseuse sans fil",
+   "category": "outils",
+   "price": 18,
+   "moq": 0,
+   "tagline": "Batterie et chargeur",
+   "description": "Livrée en coffret.",
+   "images": [
+    "https://images.unsplash.com/photo-1590635023142-73c3d34f2805"
+   ],
+   "featured": true,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "kit-bricolage-perceuse-et-marteau-187",
+   "num": "ZG-0187",
+   "name": "Kit bricolage perceuse et marteau",
+   "category": "outils",
+   "price": 22,
+   "moq": 0,
+   "tagline": "Coffret complet",
+   "description": "Pour particuliers et artisans.",
+   "images": [
+    "https://images.unsplash.com/photo-1606676539940-12768ce0e762"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "outils-a-main-assortis-188",
+   "num": "ZG-0188",
+   "name": "Outils à main assortis",
+   "category": "outils",
+   "price": 6.5,
+   "moq": 0,
+   "tagline": "Pinces, clés, tournevis",
+   "description": "Pour quincailleries.",
+   "images": [
+    "https://images.unsplash.com/photo-1540103711724-ebf833bde8d1"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "panneau-d-outils-atelier-189",
+   "num": "ZG-0189",
+   "name": "Panneau d'outils atelier",
+   "category": "outils",
+   "price": 28,
+   "moq": 0,
+   "tagline": "Menuiserie",
+   "description": "Outils avec rangement mural.",
+   "images": [
+    "https://images.unsplash.com/photo-1761544775659-aaa6fa2e5b3d"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "quincaillerie-assortie-190",
+   "num": "ZG-0190",
+   "name": "Quincaillerie assortie",
+   "category": "outils",
+   "price": 4,
+   "moq": 0,
+   "tagline": "Vis, charnières",
+   "description": "Lot varié pour boutiques.",
+   "images": [
+    "https://images.unsplash.com/photo-1783309239756-168e747dde35"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "etabli-et-outils-191",
+   "num": "ZG-0191",
+   "name": "Établi et outils",
+   "category": "outils",
+   "price": 95,
+   "moq": 0,
+   "tagline": "Atelier complet",
+   "description": "Établi avec outillage.",
+   "images": [
+    "https://images.unsplash.com/photo-1760310936486-4dd450aab2a8"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "machine-a-coudre-192",
+   "num": "ZG-0192",
+   "name": "Machine à coudre",
+   "category": "machines",
+   "price": 65,
+   "moq": 0,
+   "tagline": "Domestique et atelier",
+   "description": "Pour couturiers et ateliers.",
+   "images": [
+    "https://images.unsplash.com/photo-1626274890657-e28d5b65b04b",
+    "https://images.unsplash.com/photo-1466027397211-20d0f2449a3f"
+   ],
+   "featured": true,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "machine-a-coudre-industrielle-193",
+   "num": "ZG-0193",
+   "name": "Machine à coudre industrielle",
+   "category": "machines",
+   "price": 210,
+   "moq": 0,
+   "tagline": "Point droit rapide",
+   "description": "Pour ateliers de confection.",
+   "images": [
+    "https://images.unsplash.com/photo-1630930678172-63343537a00a"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "poste-a-souder-194",
+   "num": "ZG-0194",
+   "name": "Poste à souder",
+   "category": "machines",
+   "price": 85,
+   "moq": 0,
+   "tagline": "Inverter",
+   "description": "Pour soudeurs et ateliers métalliques.",
+   "images": [
+    "https://images.unsplash.com/photo-1563229708-55d0a600b01d",
+    "https://images.unsplash.com/photo-1531053326607-9d349096d887"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "ligne-de-production-195",
+   "num": "ZG-0195",
+   "name": "Ligne de production",
+   "category": "machines",
+   "price": 4800,
+   "moq": 0,
+   "tagline": "Sur devis",
+   "description": "Machines pour petites unités de production.",
+   "images": [
+    "https://images.unsplash.com/photo-1730584475256-9055b74420a2"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "imprimante-3d-196",
+   "num": "ZG-0196",
+   "name": "Imprimante 3D",
+   "category": "machines",
+   "price": 260,
+   "moq": 0,
+   "tagline": "Prototypage",
+   "description": "Pour ateliers et écoles.",
+   "images": [
+    "https://images.unsplash.com/photo-1611117775350-ac3950990985"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "machine-d-impression-197",
+   "num": "ZG-0197",
+   "name": "Machine d'impression",
+   "category": "machines",
+   "price": 1900,
+   "moq": 0,
+   "tagline": "Imprimerie",
+   "description": "Pour imprimeurs et sérigraphes.",
+   "images": [
+    "https://images.unsplash.com/photo-1503694978374-8a2fa686963a"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "tracteur-agricole-198",
+   "num": "ZG-0198",
+   "name": "Tracteur agricole",
+   "category": "agriculture",
+   "price": 9800,
+   "moq": 0,
+   "tagline": "50 à 90 ch",
+   "description": "Tracteur pour exploitations et coopératives.",
+   "images": [
+    "https://images.unsplash.com/photo-1571509107684-7e3034a90012",
+    "https://images.unsplash.com/photo-1685335686020-e0b487f7f426"
+   ],
+   "featured": true,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "tracteur-avec-charrue-199",
+   "num": "ZG-0199",
+   "name": "Tracteur avec charrue",
+   "category": "agriculture",
+   "price": 12500,
+   "moq": 0,
+   "tagline": "Labour",
+   "description": "Tracteur et charrue.",
+   "images": [
+    "https://images.unsplash.com/photo-1718470684824-3c53a74523bc"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "tracteur-compact-200",
+   "num": "ZG-0200",
+   "name": "Tracteur compact",
+   "category": "agriculture",
+   "price": 6900,
+   "moq": 0,
+   "tagline": "Petites parcelles",
+   "description": "Tracteur maniable.",
+   "images": [
+    "https://images.unsplash.com/photo-1683552515328-5a8d58755e9c"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "pompe-a-eau-manuelle-201",
+   "num": "ZG-0201",
+   "name": "Pompe à eau manuelle",
+   "category": "agriculture",
+   "price": 45,
+   "moq": 0,
+   "tagline": "Puits et forages",
+   "description": "Pompe robuste pour villages.",
+   "images": [
+    "https://images.unsplash.com/photo-1551604283-246c763f2cda"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "kit-d-irrigation-202",
+   "num": "ZG-0202",
+   "name": "Kit d'irrigation",
+   "category": "agriculture",
+   "price": 120,
+   "moq": 0,
+   "tagline": "Arroseurs",
+   "description": "Irrigation pour maraîchage.",
+   "images": [
+    "https://images.unsplash.com/photo-1704162485983-7b5cf81894e1"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "pulverisateur-sur-roues-203",
+   "num": "ZG-0203",
+   "name": "Pulvérisateur sur roues",
+   "category": "agriculture",
+   "price": 38,
+   "moq": 0,
+   "tagline": "Traitement des cultures",
+   "description": "Pulvérisateur jardin et champs.",
+   "images": [
+    "https://images.unsplash.com/photo-1541024626294-9eb360170dd9"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "jouets-educatifs-204",
+   "num": "ZG-0204",
+   "name": "Jouets éducatifs",
+   "category": "jouets",
+   "price": 2.2,
+   "moq": 0,
+   "tagline": "Éveil",
+   "description": "Jouets colorés pour écoles et boutiques.",
+   "images": [
+    "https://images.unsplash.com/photo-1545558014-8692077e9b5c",
+    "https://images.unsplash.com/photo-1558060370-d644479cb6f7"
+   ],
+   "featured": true,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "train-en-bois-205",
+   "num": "ZG-0205",
+   "name": "Train en bois",
+   "category": "jouets",
+   "price": 4.5,
+   "moq": 0,
+   "tagline": "Bois naturel",
+   "description": "Jouet en bois classique.",
+   "images": [
+    "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "peluches-assorties-206",
+   "num": "ZG-0206",
+   "name": "Peluches assorties",
+   "category": "jouets",
+   "price": 1.6,
+   "moq": 0,
+   "tagline": "Plusieurs tailles",
+   "description": "Peluches pour cadeaux.",
+   "images": [
+    "https://images.unsplash.com/photo-1596068587619-e4b11c7a3488",
+    "https://images.unsplash.com/photo-1559454403-b8fb88521f11"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "petites-voitures-207",
+   "num": "ZG-0207",
+   "name": "Petites voitures",
+   "category": "jouets",
+   "price": 0.7,
+   "moq": 0,
+   "tagline": "Lot",
+   "description": "Voitures miniatures.",
+   "images": [
+    "https://images.unsplash.com/photo-1725297952113-36be1c7cefb4"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "camion-jouet-208",
+   "num": "ZG-0208",
+   "name": "Camion jouet",
+   "category": "jouets",
+   "price": 3.2,
+   "moq": 0,
+   "tagline": "Plastique résistant",
+   "description": "Jouet camion.",
+   "images": [
+    "https://images.unsplash.com/photo-1658490265968-79ed61de109d"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "jeu-d-echecs-en-bois-209",
+   "num": "ZG-0209",
+   "name": "Jeu d'échecs en bois",
+   "category": "jouets",
+   "price": 5.5,
+   "moq": 0,
+   "tagline": "Plateau inclus",
+   "description": "Jeu de société.",
+   "images": [
+    "https://images.unsplash.com/photo-1616429777191-cc11a3c8bb2a"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "ballons-de-football-210",
+   "num": "ZG-0210",
+   "name": "Ballons de football",
+   "category": "sport",
+   "price": 3.5,
+   "moq": 0,
+   "tagline": "Taille 5",
+   "description": "Ballons pour clubs et écoles.",
+   "images": [
+    "https://images.unsplash.com/photo-1579952363873-27f3bade9f55",
+    "https://images.unsplash.com/photo-1575361204480-aadea25e6e68"
+   ],
+   "featured": true,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "halteres-211",
+   "num": "ZG-0211",
+   "name": "Haltères",
+   "category": "sport",
+   "price": 2.8,
+   "moq": 0,
+   "tagline": "Prix au kg",
+   "description": "Haltères pour salles de sport.",
+   "images": [
+    "https://images.unsplash.com/photo-1576678927484-cc907957088c",
+    "https://images.unsplash.com/photo-1562771242-a02d9090c90c"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "equipement-de-salle-de-sport-212",
+   "num": "ZG-0212",
+   "name": "Équipement de salle de sport",
+   "category": "sport",
+   "price": 650,
+   "moq": 0,
+   "tagline": "Sur devis",
+   "description": "Équipement complet de salle.",
+   "images": [
+    "https://images.unsplash.com/photo-1534438327276-14e5300c3a48"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "vtt-adulte-213",
+   "num": "ZG-0213",
+   "name": "VTT adulte",
+   "category": "sport",
+   "price": 68,
+   "moq": 0,
+   "tagline": "21 vitesses",
+   "description": "Vélo tout-terrain robuste.",
+   "images": [
+    "https://images.unsplash.com/photo-1618762044398-ec1e7e048bbd"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "velo-de-ville-214",
+   "num": "ZG-0214",
+   "name": "Vélo de ville",
+   "category": "sport",
+   "price": 55,
+   "moq": 0,
+   "tagline": "Léger",
+   "description": "Vélo urbain.",
+   "images": [
+    "https://images.unsplash.com/photo-1485965120184-e220f721d03e",
+    "https://images.unsplash.com/photo-1507035895480-2b3156c31fc8"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "velo-de-route-215",
+   "num": "ZG-0215",
+   "name": "Vélo de route",
+   "category": "sport",
+   "price": 120,
+   "moq": 0,
+   "tagline": "Cadre aluminium",
+   "description": "Vélo de course.",
+   "images": [
+    "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "cartons-d-expedition-216",
+   "num": "ZG-0216",
+   "name": "Cartons d'expédition",
+   "category": "emballage",
+   "price": 0.4,
+   "moq": 0,
+   "tagline": "Toutes tailles",
+   "description": "Cartons pour e-commerce et entrepôts.",
+   "images": [
+    "https://images.unsplash.com/photo-1700165644892-3dd6b67b25bc",
+    "https://images.unsplash.com/photo-1573376671096-e1fce2d1f19d"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "caisses-plastique-empilables-217",
+   "num": "ZG-0217",
+   "name": "Caisses plastique empilables",
+   "category": "emballage",
+   "price": 2.2,
+   "moq": 0,
+   "tagline": "Marchés et entrepôts",
+   "description": "Caisses robustes.",
+   "images": [
+    "https://images.unsplash.com/photo-1593824854968-7833add41c16"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "bacs-de-rangement-218",
+   "num": "ZG-0218",
+   "name": "Bacs de rangement",
+   "category": "emballage",
+   "price": 1.8,
+   "moq": 0,
+   "tagline": "Jaune et blanc",
+   "description": "Bacs pour stockage.",
+   "images": [
+    "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "etageres-d-entrepot-219",
+   "num": "ZG-0219",
+   "name": "Étagères d'entrepôt",
+   "category": "emballage",
+   "price": 85,
+   "moq": 0,
+   "tagline": "Métal, charge lourde",
+   "description": "Rayonnages pour magasins et dépôts.",
+   "images": [
+    "https://images.unsplash.com/photo-1627309366653-2dedc084cdf1",
+    "https://images.unsplash.com/photo-1587293852726-70cdb56c2866"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "boites-cadeaux-blanches-220",
+   "num": "ZG-0220",
+   "name": "Boîtes cadeaux blanches",
+   "category": "emballage",
+   "price": 0.3,
+   "moq": 0,
+   "tagline": "Personnalisables",
+   "description": "Boîtes pour boutiques.",
+   "images": [
+    "https://images.unsplash.com/photo-1771848194072-3a7d2b37360c"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "cahiers-assortis-221",
+   "num": "ZG-0221",
+   "name": "Cahiers assortis",
+   "category": "papeterie",
+   "price": 0.35,
+   "moq": 0,
+   "tagline": "Rentrée scolaire",
+   "description": "Cahiers de toutes tailles.",
+   "images": [
+    "https://images.unsplash.com/photo-1566869112473-77c4fb94359c"
+   ],
+   "featured": true,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "crayons-de-couleur-222",
+   "num": "ZG-0222",
+   "name": "Crayons de couleur",
+   "category": "papeterie",
+   "price": 0.5,
+   "moq": 0,
+   "tagline": "Boîtes de 12",
+   "description": "Pour écoles et librairies.",
+   "images": [
+    "https://images.unsplash.com/photo-1629652487043-fb2825838f8c",
+    "https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "kit-fournitures-de-bureau-223",
+   "num": "ZG-0223",
+   "name": "Kit fournitures de bureau",
+   "category": "papeterie",
+   "price": 3.2,
+   "moq": 0,
+   "tagline": "Agrafeuse, ciseaux",
+   "description": "Kit de bureau complet.",
+   "images": [
+    "https://images.unsplash.com/photo-1654931800100-2ecf6eee7c64"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "stylos-et-papeterie-224",
+   "num": "ZG-0224",
+   "name": "Stylos et papeterie",
+   "category": "papeterie",
+   "price": 0.15,
+   "moq": 0,
+   "tagline": "Prix à l'unité",
+   "description": "Stylos et articles de bureau.",
+   "images": [
+    "https://images.unsplash.com/photo-1456735190827-d1262f71b8a3"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
+  {
+   "id": "rame-de-papier-a4-225",
+   "num": "ZG-0225",
+   "name": "Rame de papier A4",
+   "category": "papeterie",
+   "price": 2.6,
+   "moq": 0,
+   "tagline": "500 feuilles",
+   "description": "Papier pour imprimantes.",
+   "images": [
+    "https://images.unsplash.com/photo-1631173716529-fd1696a807b0"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  }
+ ],
+ "settings": {
+  "minOrderUSD": 500,
+  "usdToXof": 600,
+  "whatsappNumber": "+4915510520344"
+ }
+}

@@ -23,6 +23,11 @@
     return true;
   }
 
+  /* Racine du site (pour les photos copiées dans assets/photos/) */
+  var ROOT = (function(){
+    var sc = document.currentScript && document.currentScript.src;
+    return sc ? sc.replace(/assets\/js\/store\.js.*$/, '') : '';
+  })();
   /* ---------------- Normalisation ---------------- */
   function num(v, d){ var n = parseFloat(String(v).replace(',', '.')); return isFinite(n) ? n : (d || 0); }
   function bool(v){ return v === true || v === 1 || /^(true|1|oui|yes|x)$/i.test(String(v).trim()); }
@@ -33,7 +38,7 @@
       id: String(p.id || ''), num: String(p.num || ''), name: String(p.name || ''),
       category: String(p.category || ''), price: num(p.price), moq: Math.max(0, Math.round(num(p.moq))),
       tagline: String(p.tagline || ''), description: String(p.description || ''),
-      images: (imgs || []).filter(Boolean).map(String),
+      images: (imgs || []).filter(Boolean).map(String).map(function(u){ return /^assets\//.test(u) ? ROOT + u : u; }),
       featured: bool(p.featured), top: Math.max(0, Math.round(num(p.top))),
       active: p.active === undefined || p.active === '' ? true : bool(p.active)
     };
@@ -87,11 +92,6 @@
   function toXof(usd, s){ return Math.round((+usd || 0) * ((s && s.usdToXof) || SHOP_CONFIG.usdToXof)); }
   function fmtXOF(n){ return group(String(Math.round(+n || 0))) + NBSP + 'FCFA'; }
 
-  /* Racine du site (pour les photos copiées dans assets/photos/) */
-  var ROOT = (function(){
-    var sc = document.currentScript && document.currentScript.src;
-    return sc ? sc.replace(/assets\/js\/store\.js.*$/, '') : '';
-  })();
   var LOCAL = typeof LOCAL_PHOTOS === 'undefined' ? false : !!LOCAL_PHOTOS;
   function unsplashId(src){ var m = /images\.unsplash\.com\/(photo-[A-Za-z0-9-]+)/.exec(src || ''); return m ? m[1] : ''; }
   /* Adresse locale de la photo si elle a été copiée sur le site */
@@ -109,18 +109,29 @@
   }
 
   /* ---------------- Réseau ---------------- */
-  function getJSON(url){
-    return fetch(url, {method:'GET', redirect:'follow', cache:'no-store'}).then(function(r){
+  /* fetch avec délai maximum : une connexion qui traîne ne bloque jamais le site */
+  function timed(url, opts, ms){
+    var ctrl = typeof AbortController !== 'undefined' ? new AbortController() : null;
+    if (ctrl) opts.signal = ctrl.signal;
+    return new Promise(function(resolve, reject){
+      var t = setTimeout(function(){ if (ctrl) ctrl.abort(); reject(new Error('Délai dépassé : la connexion à Google ne répond pas.')); }, ms);
+      fetch(url, opts).then(function(r){ clearTimeout(t); resolve(r); }, function(e){ clearTimeout(t); reject(e); });
+    });
+  }
+  function getJSON(url, ms){
+    return timed(url, {method:'GET', redirect:'follow', cache:'no-store'}, ms || 8000).then(function(r){
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return r.json();
     });
   }
-  function post(payload){
-    return fetch(ENDPOINT, {
+  function post(payload, ms){
+    return timed(ENDPOINT, {
       method:'POST', redirect:'follow',
       headers:{'Content-Type':'text/plain;charset=utf-8'},
       body: JSON.stringify(payload)
-    }).then(function(r){ return r.json(); }).then(function(res){
+    }, ms || 30000).then(function(r){ return r.json(); }, function(e){
+      throw new Error(/Délai/.test(e.message) ? e.message : 'Connexion à Google Sheets impossible depuis ce réseau ou ce navigateur. Réessayez (ou avec Chrome / un autre réseau).');
+    }).then(function(res){
       if (!res || res.ok !== true) throw new Error((res && res.error) || 'Erreur du serveur');
       return res.data;
     });
@@ -135,9 +146,19 @@
     var c = ls(KEY_CACHE);
     return c && c.db ? normDb(c.db) : null;
   }
-  function load(){
-    if (!LIVE) return Promise.resolve(cached());
-    return getJSON(ENDPOINT + (ENDPOINT.indexOf('?') > -1 ? '&' : '?') + 'action=catalogue&t=' + Date.now())
+  /* Catalogue publié avec le site (catalogue.json, même adresse que le site) :
+     s'ouvre partout, même si Google est bloqué ou lent. Mis à jour
+     automatiquement depuis Google Sheets par le robot GitHub « Synchroniser ». */
+  function loadStatic(){
+    return getJSON(ROOT + 'catalogue.json?v=' + Math.floor(Date.now() / 300000), 8000).then(function(d){
+      var db = normDb(d);
+      if (!db.products.length) throw new Error('catalogue.json vide');
+      return db;
+    });
+  }
+  function loadLive(){
+    if (!LIVE) return Promise.reject(new Error('Google Sheets non branché'));
+    return getJSON(ENDPOINT + (ENDPOINT.indexOf('?') > -1 ? '&' : '?') + 'action=catalogue&t=' + Date.now(), 7000)
       .then(function(res){
         if (!res || res.ok !== true) throw new Error((res && res.error) || 'Catalogue indisponible');
         var db = normDb(res.data);
@@ -146,6 +167,10 @@
         ls(KEY_CACHE, {t: Date.now(), db: db});
         return db;
       });
+  }
+  function load(){
+    if (!LIVE){ var demo = ls(KEY_DEMO); return demo ? Promise.resolve(normDb(demo)) : loadStatic()['catch'](seedDb); }
+    return loadLive()['catch'](function(){ return loadStatic(); })['catch'](seedDb);
   }
 
   /* Trace de la demande (onglet « Demandes ») — n'empêche jamais WhatsApp */
@@ -250,13 +275,13 @@
       return shrink(file, LIVE ? 1400 : 900, LIVE ? 0.84 : 0.74).then(function(dataUrl){
         if (!LIVE) return dataUrl;
         return post({action:'upload', password:pass(), name:(file.name || 'photo').replace(/\.[^.]+$/, '') + '.jpg',
-          mime:'image/jpeg', data:dataUrl.split(',')[1]}).then(function(d){ return d.url; });
+          mime:'image/jpeg', data:dataUrl.split(',')[1]}, 90000).then(function(d){ return d.url; });
       });
     },
     importSeed: function(force){
       var seed = seedDb();
       if (!LIVE){ ls(KEY_DEMO, null); return Promise.resolve(seed); }
-      return post({action:'importSeed', password:pass(), force:!!force, categories:seed.categories, products:seed.products});
+      return post({action:'importSeed', password:pass(), force:!!force, categories:seed.categories, products:seed.products}, 90000);
     },
     demandes: function(){
       if (!LIVE) return Promise.resolve([]);
@@ -267,7 +292,7 @@
 
   window.ZG = {
     live: LIVE, endpoint: ENDPOINT,
-    load: load, cached: cached, logRequest: logRequest,
+    load: load, loadStatic: loadStatic, loadLive: loadLive, cached: cached, logRequest: logRequest,
     minQty: minQty, qtyStep: qtyStep, fmtUSD: fmtUSD, fmtXOF: fmtXOF, toXof: toXof,
     sized: sized, local: local, normProduct: normProduct, seedDb: seedDb, store: ls,
     admin: admin

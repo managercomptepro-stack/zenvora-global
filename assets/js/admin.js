@@ -50,6 +50,7 @@
 
   function boot(){
     showApp();
+    $('syncNote').hidden = !A.live;
     $('pList').innerHTML = '<p class="help">Chargement du catalogue…</p>';
     A.load().then(function(db){ DB = db; renderAll(); })['catch'](function(err){
       if (/mot de passe|password|autoris/i.test(err.message)){ A.logout(); showLogin(); $('loginErr').textContent = err.message; return; }

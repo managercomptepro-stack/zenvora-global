@@ -899,16 +899,28 @@
   /* ============================================================
      DÉMARRAGE : affichage immédiat (cache ou démo), puis catalogue frais
      ============================================================ */
-  var first = ZG.cached();
-  if (first) apply(first); else grid.innerHTML = '<div class="loading"><i></i><i></i><i></i><i></i><i></i></div>';
-  if (ZG.live){
-    ZG.load().then(function(db){
-      var keepScroll = window.scrollY;
-      apply(db);
-      window.scrollTo(0, keepScroll);
-    })['catch'](function(err){
-      console.warn('[Zenvora] Catalogue en ligne indisponible :', err);
-      if (!first) apply(ZG.seedDb());
-    });
+  /* Ordre de confiance : Google Sheets en direct (3) > catalogue publié (2) > mémoire de l'appareil (1) > démo (0).
+     On affiche tout de suite ce qu'on a, puis on remplace par mieux sans jamais bloquer. */
+  var rank = -1;
+  function show(db, r){
+    if (!db || !db.products || !db.products.length || r < rank) return;
+    var keep = window.scrollY, wasOpen = !$('pm').hidden;
+    rank = r;
+    apply(db);
+    if (keep) window.scrollTo(0, keep);
+    if (wasOpen) {}
   }
+  var cachedDb = ZG.cached();
+  if (cachedDb && cachedDb.products.length) show(cachedDb, ZG.live ? 1 : 2);
+  else grid.innerHTML = '<div class="loading"><i></i><i></i><i></i><i></i><i></i></div>';
+  if (ZG.live){
+    ZG.loadStatic().then(function(db){ show(db, 2); })['catch'](function(){});
+    ZG.loadLive().then(function(db){ show(db, 3); })['catch'](function(err){
+      console.warn('[Zenvora] Google Sheets injoignable, catalogue publié utilisé :', err && err.message);
+    });
+  } else {
+    ZG.load().then(function(db){ show(db, 2); });
+  }
+  /* Filet de sécurité : rien après 9 s → catalogue de démonstration */
+  setTimeout(function(){ if (rank < 0) show(ZG.seedDb(), 0); }, 9000);
 })();
