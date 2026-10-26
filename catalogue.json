@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T03:12:00.279Z",
+ "updated": "2026-10-26T03:17:59.655Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,27 @@
   }
  ],
  "products": [
+  {
+   "id": "ensemble-jeune-filles-mvoos92a",
+   "num": "ZG-0252",
+   "name": "Ensemble jeune filles",
+   "category": "enfants",
+   "price": 7.94,
+   "moq": 0,
+   "tagline": "Âge 2-9ans",
+   "description": "Nouvelle ensemble deux pièces pour jeunes filles collection automne/hiver  2026 : manches longues en polyester couleur unie avec noeud papillon manches en maille et pantalon",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167110-mvoonapd.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167109-mvoon3zz.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167108-mvoon7ln.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167113-mvooncwe.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167112-mvoonf19.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167111-mvoonh03.jpg"
+   ],
+   "featured": true,
+   "top": 38,
+   "active": true
+  },
   {
    "id": "ensemble-t-shirts-culotte-enfant-mvookjrr",
    "num": "ZG-0251",
