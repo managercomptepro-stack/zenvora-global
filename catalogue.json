@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T02:25:58.849Z",
+ "updated": "2026-10-26T02:29:41.018Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,25 @@
   }
  ],
  "products": [
+  {
+   "id": "chaussures-enfants-mvon24gp",
+   "num": "ZG-0243",
+   "name": "Chaussures enfants",
+   "category": "chaussures",
+   "price": 1.94,
+   "moq": 0,
+   "tagline": "19-25",
+   "description": "Mignon chaussons D'hiver en coton lapin animé, pour enfants, double polaire respirante et chaude",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167000-mvon1rdl.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167003-mvon1tm3.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167002-mvon1vax.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167001-mvon1wyt.jpg"
+   ],
+   "featured": true,
+   "top": 29,
+   "active": true
+  },
   {
    "id": "chaussures-enfants-mvomxd1d",
    "num": "ZG-0242",
