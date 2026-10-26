@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T02:29:41.018Z",
+ "updated": "2026-10-26T02:36:58.626Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,27 @@
   }
  ],
  "products": [
+  {
+   "id": "voiture-jouets-enfants-mvonbi4f",
+   "num": "ZG-0244",
+   "name": "Voiture Jouets enfants",
+   "category": "jouets",
+   "price": 1.52,
+   "moq": 0,
+   "tagline": "",
+   "description": "Voiture Jouets enfants Monster truck inertie suv véhicules à friction pour bébé garçons",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167009-mvon7obx.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167011-mvon7qty.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167010-mvon7sis.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167014-mvon7u9r.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167013-mvon7vwg.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167012-mvon7xnn.jpg"
+   ],
+   "featured": true,
+   "top": 30,
+   "active": true
+  },
   {
    "id": "chaussures-enfants-mvon24gp",
    "num": "ZG-0243",
