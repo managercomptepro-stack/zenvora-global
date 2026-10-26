@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T02:19:57.966Z",
+ "updated": "2026-10-26T02:25:58.849Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,30 @@
   }
  ],
  "products": [
+  {
+   "id": "chaussures-enfants-mvomxd1d",
+   "num": "ZG-0242",
+   "name": "Chaussures enfants",
+   "category": "chaussures",
+   "price": 1.98,
+   "moq": 0,
+   "tagline": "19-25",
+   "description": "Chaussures en coton chaud D'hiver pour enfants , Antidérapant , désign animé , respirant et mignon pour garçons et filles",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001166994-mvomrkc9.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001166996-mvomrfx6.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001166995-mvomri4q.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001166989-mvomrm5f.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001166988-mvomrnyq.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001166993-mvomrpp1.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001166992-mvomrrei.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001166991-mvomrt49.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001166990-mvomrv38.jpg"
+   ],
+   "featured": true,
+   "top": 28,
+   "active": true
+  },
   {
    "id": "chaussures-sport-enfants-mvompmkr",
    "num": "ZG-0241",
