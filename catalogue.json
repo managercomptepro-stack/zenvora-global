@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T03:17:59.655Z",
+ "updated": "2026-10-26T03:25:14.259Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,34 @@
   }
  ],
  "products": [
+  {
+   "id": "tissure-pagne-en-coton-mvop1ker",
+   "num": "ZG-0253",
+   "name": "TISSURE PAGNE EN COTON",
+   "category": "femmes",
+   "price": 1.95,
+   "moq": 0,
+   "tagline": "",
+   "description": "TISSURE PAGNE en coton biologique 100% Batik - tissé africain",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167116-mvooxqeo.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167118-mvooxkzr.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167117-mvooxnvq.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167127-mvooxt08.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167126-mvooxuw1.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167115-mvooxwni.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167119-mvooxywd.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167121-mvooy11i.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167120-mvooy3ae.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167125-mvooy57i.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167114-mvooy7f5.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167124-mvooy9t7.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167123-mvooyc3m.jpg"
+   ],
+   "featured": true,
+   "top": 39,
+   "active": true
+  },
   {
    "id": "ensemble-jeune-filles-mvoos92a",
    "num": "ZG-0252",
