@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T02:41:12.660Z",
+ "updated": "2026-10-26T02:45:52.222Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,27 @@
   }
  ],
  "products": [
+  {
+   "id": "chaussures-enfants-mvonmxum",
+   "num": "ZG-0246",
+   "name": "Chaussures enfants",
+   "category": "enfants",
+   "price": 3.21,
+   "moq": 0,
+   "tagline": "P 20-35",
+   "description": "Chaussures Ann chine pour enfants garçons et filles chaussons en liège décontracté haute de gamme",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167019-mvonigsg.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167018-mvonij6q.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167022-mvonil26.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167021-mvonin1e.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167020-mvoniow1.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167023-mvoniqlp.jpg"
+   ],
+   "featured": true,
+   "top": 32,
+   "active": true
+  },
   {
    "id": "chaussures-enfants-mvongy4y",
    "num": "ZG-0245",
