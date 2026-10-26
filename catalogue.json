@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T03:06:14.500Z",
+ "updated": "2026-10-26T03:12:00.279Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,25 @@
   }
  ],
  "products": [
+  {
+   "id": "ensemble-t-shirts-culotte-enfant-mvookjrr",
+   "num": "ZG-0251",
+   "name": "Ensemble T-shirts culotte enfant",
+   "category": "enfants",
+   "price": 6.81,
+   "moq": 0,
+   "tagline": "Âge 1-7ans",
+   "description": "Annshine nouveauté fashion collection 2026: ensemble d'été tendance et stylé pour enfants garçons, style Bad boys",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167107-mvooez8b.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167106-mvoof1rr.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167105-mvoof3k3.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167104-mvoof5oc.jpg"
+   ],
+   "featured": true,
+   "top": 37,
+   "active": true
+  },
   {
    "id": "ensemble-enfants-filles-3-pieces-mvood4yr",
    "num": "ZG-0250",
