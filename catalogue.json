@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T02:36:58.626Z",
+ "updated": "2026-10-26T02:41:12.660Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,24 @@
   }
  ],
  "products": [
+  {
+   "id": "chaussures-enfants-mvongy4y",
+   "num": "ZG-0245",
+   "name": "Chaussures enfants",
+   "category": "chaussures",
+   "price": 2.21,
+   "moq": 0,
+   "tagline": "P : 19-30",
+   "description": "2026 2026 chaussures sport led pour enfants décontracté garçons et filles",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167015-mvondrw3.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167016-mvondpyi.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167017-mvondns5.jpg"
+   ],
+   "featured": true,
+   "top": 31,
+   "active": true
+  },
   {
    "id": "voiture-jouets-enfants-mvonbi4f",
    "num": "ZG-0244",
