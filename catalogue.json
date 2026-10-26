@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T03:01:07.228Z",
+ "updated": "2026-10-26T03:06:14.500Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,30 @@
   }
  ],
  "products": [
+  {
+   "id": "ensemble-enfants-filles-3-pieces-mvood4yr",
+   "num": "ZG-0250",
+   "name": "Ensemble enfants filles 3 pièces",
+   "category": "enfants",
+   "price": 7.23,
+   "moq": 0,
+   "tagline": "Âge 1...6 ans",
+   "description": "Ensemble trois pièces pour filles , Annshine nouveauté 2026 : haut sans manche couleur unie avec jupe a volants brodées",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167049-mvoo8nmf.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167051-mvoo8qkp.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167050-mvoo8sf7.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167053-mvoo8u8l.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167052-mvoo8w6b.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167048-mvoo8xxm.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167047-mvoo8zun.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167046-mvoo92p0.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167045-mvoo94ne.jpg"
+   ],
+   "featured": true,
+   "top": 36,
+   "active": true
+  },
   {
    "id": "ensemble-de-mode-enfants-filles-mvoo6jv8",
    "num": "ZG-0249",
