@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T01:53:01.481Z",
+ "updated": "2026-10-26T02:19:57.966Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,29 @@
   }
  ],
  "products": [
+  {
+   "id": "chaussures-sport-enfants-mvompmkr",
+   "num": "ZG-0241",
+   "name": "chaussures sport enfants",
+   "category": "chaussures",
+   "price": 3.95,
+   "moq": 0,
+   "tagline": "P 21-30",
+   "description": "Chaussures sport enfant décontracté tendance, en maille garçons et filles , Baskets",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001166964-mvom86sz.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001166975-mvom8903.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001166963-mvom8apc.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001166974-mvom8cl6.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001166962-mvom8e1u.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001166973-mvom8fy0.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001166972-mvom8hqp.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001166971-mvom8jil.jpg"
+   ],
+   "featured": true,
+   "top": 27,
+   "active": true
+  },
   {
    "id": "fauteuil-compresse-mvolqz9x",
    "num": "ZG-0240",
