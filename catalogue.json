@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T02:45:52.222Z",
+ "updated": "2026-10-26T02:52:03.781Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,27 @@
   }
  ],
  "products": [
+  {
+   "id": "ensemble-trois-pieces-enfants-mvonuwjo",
+   "num": "ZG-0247",
+   "name": "Ensemble trois pièces enfants",
+   "category": "enfants",
+   "price": 6.61,
+   "moq": 0,
+   "tagline": "1 - 5 ans",
+   "description": "Ensemble trois pièces enfants filles pour printemps -automne 2026 veste a manches longues, gilet et jupe courte",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167029-mvonoisq.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167028-mvonol7u.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167027-mvonon0n.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167026-mvonooxt.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167025-mvonoqq6.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167024-mvonosph.jpg"
+   ],
+   "featured": true,
+   "top": 33,
+   "active": true
+  },
   {
    "id": "chaussures-enfants-mvonmxum",
    "num": "ZG-0246",
