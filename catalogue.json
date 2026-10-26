@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T21:25:08.230Z",
+ "updated": "2026-10-26T01:53:01.481Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,30 @@
   }
  ],
  "products": [
+  {
+   "id": "fauteuil-compresse-mvolqz9x",
+   "num": "ZG-0240",
+   "name": "Fauteuil compressé",
+   "category": "meubles",
+   "price": 21.31,
+   "moq": 0,
+   "tagline": "",
+   "description": "Fauteuil paresseux moderne en velours en forme de citrouille avec ottoman, fauteuil nuage écologique pour Salon",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001166864-mvolngig.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001166863-mvolnin7.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001166862-mvolnkci.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001166858-mvolnm0w.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001166857-mvolnnv8.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001166856-mvolnq9d.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001166859-mvolns9b.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001166861-mvolnu2q.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001166860-mvolnvm3.jpg"
+   ],
+   "featured": true,
+   "top": 26,
+   "active": true
+  },
   {
    "id": "canape-compresse-mvoc6h3a",
    "num": "ZG-0239",
