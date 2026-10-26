@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T02:55:44.343Z",
+ "updated": "2026-10-26T03:01:07.228Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,26 @@
   }
  ],
  "products": [
+  {
+   "id": "ensemble-de-mode-enfants-filles-mvoo6jv8",
+   "num": "ZG-0249",
+   "name": "Ensemble de mode enfants filles",
+   "category": "enfants",
+   "price": 8.91,
+   "moq": 0,
+   "tagline": "Âge 1-6ans",
+   "description": "Ensemble de mode 2026 Annshine  Fashion: vestes velours pour Noël nouveau châle de Noël+ Robe imprimée avec camisole",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167042-mvoo1dbl.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167040-mvoo1615.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167044-mvoo190x.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167043-mvoo1b7k.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167041-mvoo1gde.jpg"
+   ],
+   "featured": true,
+   "top": 35,
+   "active": true
+  },
   {
    "id": "ensemble-costume-trois-pieces-garcons-mvonzmqf",
    "num": "ZG-0248",
