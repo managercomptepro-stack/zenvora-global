@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T02:52:03.781Z",
+ "updated": "2026-10-26T02:55:44.343Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,27 @@
   }
  ],
  "products": [
+  {
+   "id": "ensemble-costume-trois-pieces-garcons-mvonzmqf",
+   "num": "ZG-0248",
+   "name": "Ensemble costume trois pièces garçons",
+   "category": "enfants",
+   "price": 7.24,
+   "moq": 0,
+   "tagline": "Âge 1-6 ans",
+   "description": "Nouvelle arrivage Automne , ensemble costume trois pièces enfants garçons",
+   "images": [
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167034-mvonwnfg.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167038-mvonwgcw.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167039-mvonwdph.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167037-mvonwi8k.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167036-mvonwk3f.jpg",
+    "https://raw.githubusercontent.com/managercomptepro-stack/zenvora-global/main/assets/uploads/1001167035-mvonwlnj.jpg"
+   ],
+   "featured": true,
+   "top": 34,
+   "active": true
+  },
   {
    "id": "ensemble-trois-pieces-enfants-mvonuwjo",
    "num": "ZG-0247",
