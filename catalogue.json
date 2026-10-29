@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T22:29:18.757Z",
+ "updated": "2026-10-29T22:29:34.354Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,22 @@
   }
  ],
  "products": [
+  {
+   "id": "tissu-africain-imprime-double-face-91215",
+   "num": "ZG-0456",
+   "name": "Tissu africain imprimé double face",
+   "category": "textile",
+   "price": 13.51,
+   "moq": 0,
+   "tagline": "Tendance des fêtes",
+   "description": "Tissu africain imprimé double face – Motif géométrique chevron et labyrinthe en coton Ankara pour robes, étoles et vêtem",
+   "images": [
+    "https://ae-pic-a1.aliexpress-media.com/kf/S76891a07de5e4b8fa1fe7011007a000fd.jpg_640x640q75.jpg"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
   {
    "id": "tissu-imprime-grand-super-dutch-wax-original-08446",
    "num": "ZG-0457",
