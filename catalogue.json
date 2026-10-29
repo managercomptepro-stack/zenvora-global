@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T22:29:04.129Z",
+ "updated": "2026-10-29T22:29:18.757Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,22 @@
   }
  ],
  "products": [
+  {
+   "id": "tissu-imprime-grand-super-dutch-wax-original-08446",
+   "num": "ZG-0457",
+   "name": "Tissu imprimé Grand Super Dutch Wax original",
+   "category": "textile",
+   "price": 37.1,
+   "moq": 0,
+   "tagline": "Tendance des fêtes",
+   "description": "Tissu imprimé Grand Super Dutch Wax original, pagne africain Super Glitter Wax, vêtements, artisanat et décorations pour",
+   "images": [
+    "https://ae-pic-a1.aliexpress-media.com/kf/S66ef615f3da44d93823a9cc901cc7345W.jpg_640x640q75.jpg"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
   {
    "id": "tissu-d-avertissement-neerlandais-a-imprime-africa-03015",
    "num": "ZG-0458",
