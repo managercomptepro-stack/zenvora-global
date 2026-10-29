@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T22:28:32.782Z",
+ "updated": "2026-10-29T22:29:04.129Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,22 @@
   }
  ],
  "products": [
+  {
+   "id": "tissu-d-avertissement-neerlandais-a-imprime-africa-03015",
+   "num": "ZG-0458",
+   "name": "Tissu d'Avertissement Néerlandais à Imprimé Africain Super",
+   "category": "textile",
+   "price": 15.5,
+   "moq": 0,
+   "tagline": "Tendance des fêtes",
+   "description": "Tissu d'Avertissement Néerlandais à Imprimé Africain Super Hollandais, 100% Coton, Garantie de 6 Mètres, Meilleure Quali",
+   "images": [
+    "https://ae-pic-a1.aliexpress-media.com/kf/S0eb7b7305d4d4e77a9b6a375092f6f5dz.png_640x640q75.jpg"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
   {
    "id": "tissu-africain-en-pagne-java-wax-ghana-kente-90004",
    "num": "ZG-0459",
