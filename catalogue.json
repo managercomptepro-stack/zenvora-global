@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T03:25:14.259Z",
+ "updated": "2026-10-29T22:28:32.782Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,22 @@
   }
  ],
  "products": [
+  {
+   "id": "tissu-africain-en-pagne-java-wax-ghana-kente-90004",
+   "num": "ZG-0459",
+   "name": "Tissu africain en pagne java wax Ghana kente",
+   "category": "textile",
+   "price": 25.82,
+   "moq": 0,
+   "tagline": "Tendance des fêtes",
+   "description": "Tissu africain en pagne java wax Ghana kente, tissu imprimé 100% polyester, pour la confection de vêtements, de bandeaux",
+   "images": [
+    "https://ae-pic-a1.aliexpress-media.com/kf/Sb37ec8dbf1474113acd5d2d2aadbc1eap.jpg_640x640q75.jpg"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
   {
    "id": "tissure-pagne-en-coton-mvop1ker",
    "num": "ZG-0253",
