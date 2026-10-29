@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T22:29:53.760Z",
+ "updated": "2026-10-29T22:30:03.345Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,22 @@
   }
  ],
  "products": [
+  {
+   "id": "tissu-africain-imprime-wax-05778",
+   "num": "ZG-0454",
+   "name": "Tissu africain imprimé wax",
+   "category": "textile",
+   "price": 18.06,
+   "moq": 0,
+   "tagline": "Tendance des fêtes",
+   "description": "Tissu africain imprimé wax – Ankara 100 % coton avec paillettes dorées, 6 yards/rouleau, pour robes, foulards et vêtemen",
+   "images": [
+    "https://ae-pic-a1.aliexpress-media.com/kf/S9b954f9f8a524097b136e438f18138d1p.jpg_640x640q75.jpg"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
   {
    "id": "tissu-classique-en-coton-wax-imprime-a-la-cire-23440",
    "num": "ZG-0455",
