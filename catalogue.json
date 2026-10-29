@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T22:30:03.345Z",
+ "updated": "2026-10-29T22:30:08.247Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,22 @@
   }
  ],
  "products": [
+  {
+   "id": "tissu-de-cire-ankara-populaire-33799",
+   "num": "ZG-0453",
+   "name": "Tissu de cire Ankara populaire",
+   "category": "textile",
+   "price": 30.81,
+   "moq": 0,
+   "tagline": "Tendance des fêtes",
+   "description": "Tissu de cire Ankara populaire, imprimé de cire africaine de haute qualité, 100% coton, Pagne doux pour robes du népal",
+   "images": [
+    "https://ae-pic-a1.aliexpress-media.com/kf/S7a95033404bb4083a3ab4ac111d778fai.jpg_640x640q75.jpg"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
   {
    "id": "tissu-africain-imprime-wax-05778",
    "num": "ZG-0454",
