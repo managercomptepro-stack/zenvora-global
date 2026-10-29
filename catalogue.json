@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T22:29:34.354Z",
+ "updated": "2026-10-29T22:29:53.760Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,22 @@
   }
  ],
  "products": [
+  {
+   "id": "tissu-classique-en-coton-wax-imprime-a-la-cire-23440",
+   "num": "ZG-0455",
+   "name": "Tissu classique en coton wax imprimé à la cire",
+   "category": "textile",
+   "price": 34.63,
+   "moq": 0,
+   "tagline": "Tendance des fêtes",
+   "description": "Tissu classique en coton wax imprimé à la cire, style java, pagne africain de 6 yards, pour la confection de vêtements, ",
+   "images": [
+    "https://ae-pic-a1.aliexpress-media.com/kf/S17982000aed847fab9cca3b852954d65B.jpg_640x640q75.jpg"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
   {
    "id": "tissu-africain-imprime-double-face-91215",
    "num": "ZG-0456",
