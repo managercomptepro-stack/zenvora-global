@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T22:30:08.247Z",
+ "updated": "2026-10-29T22:30:13.613Z",
  "categories": [
   {
    "key": "motos",
@@ -143,6 +143,22 @@
   }
  ],
  "products": [
+  {
+   "id": "nouvelle-collection-de-tissus-imprimes-en-wax-holl-79705",
+   "num": "ZG-0452",
+   "name": "Nouvelle collection de tissus imprimés en wax hollandais",
+   "category": "textile",
+   "price": 56.05,
+   "moq": 0,
+   "tagline": "Tendance des fêtes",
+   "description": "Nouvelle collection de tissus imprimés en wax hollandais véritable, 100% coton, tissu africain pour vêtements, robes, un",
+   "images": [
+    "https://ae-pic-a1.aliexpress-media.com/kf/S2003a9004ffb4dcdb63a1a111b75f1951.jpg_640x640q75.jpg"
+   ],
+   "featured": false,
+   "top": 0,
+   "active": true
+  },
   {
    "id": "tissu-de-cire-ankara-populaire-33799",
    "num": "ZG-0453",
